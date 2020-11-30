@@ -15,7 +15,7 @@ and \
 order by timestamp desc limit 100;'
 
 #echo $this_sql
-ssh 10.16.20.35 "mysql -uroot -p123456 -Dalarms -e'$this_sql'" | while read li;
+ssh remote_ip "mysql -uroot -pPASSWORD -Dalarms -e'$this_sql'" | while read li;
 do
   echo $li
   this_ip=`echo $li | awk '{print $1}' | awk -F '-' '{print $NF}'`
