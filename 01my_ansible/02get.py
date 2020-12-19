@@ -51,6 +51,7 @@ def gen_ip_fun(args_ip, args_ip_file, IP_FILE):
 def run(IP_FILE, target_file, save_dir):
     ip_lists = []
     machines_info = []
+    target_file = str(target_file)
     #ip_file = open(IP_FILE, 'rb')
     ip_file = open(IP_FILE, 'r', encoding="utf-8")
     for li in ip_file :
@@ -64,27 +65,27 @@ def run(IP_FILE, target_file, save_dir):
     #max_tasks = input('请输入并行个数:')
     max_tasks = 10
     while ip_lists :
-        this_ip_lists = []
-        for li in range(max_tasks) :
-          if ip_lists :
-            this_ip = ip_lists.pop(0)
-            this_ip_lists.append(str(this_ip))
-        this_threads = []
-        for ip in this_ip_lists :
-            for li_m in machines_info :
-                if ip in li_m :
-                    this_info = str(li_m)
-            ip = str(ip).split(' ')
-            ip = str(ip[0])
-            this_save_dir = os.path.join(save_dir, str(ip))
-            if not os.path.isdir(this_save_dir):
-                os.makedirs(this_save_dir)
-            t_name = str(ip)
-            t_name = myThread(this_info, t_name, target_file, this_save_dir)
-            this_threads.append(t_name)
-    [ thr.start() for thr in this_threads ]
-    [ thr.join() for thr in this_threads ]
-    print('-----------------------------------------')
+      this_ip_lists = []
+      for li in range(max_tasks) :
+        if ip_lists :
+          this_ip = ip_lists.pop(0)
+          this_ip_lists.append(str(this_ip))
+      this_threads = []
+      for ip in this_ip_lists :
+          for li_m in machines_info :
+              if ip in li_m :
+                  this_info = str(li_m)
+          ip = str(ip).split(' ')
+          ip = str(ip[0])
+          this_save_dir = os.path.join(save_dir, str(ip))
+          if not os.path.isdir(this_save_dir):
+              os.makedirs(this_save_dir)
+          #t_name = str(ip)
+          t_name = myThread(this_info, ip, target_file, this_save_dir)
+          this_threads.append(t_name)
+      [ thr.start() for thr in this_threads ]
+      [ thr.join() for thr in this_threads ]
+      print('-----------------------------------------')
 
 
 class myThread (threading.Thread):
@@ -98,7 +99,9 @@ class myThread (threading.Thread):
         this_str="start :" + self.this_info
         print (this_str)
         try :
-            os.system(('scp -o ConnectTimeout=5 -q -r root@%s:%s %s') % (str(self.name), str(self.target_file), str(self.save_dir)))
+            #command = "scp -o ConnectTimeout=30 -q -r root@" + str(self.name)  + ":" +  str(self.target_file) + " " + str(self.save_dir)
+            #res = subprocess.run(command,shell=True,stdout=subprocess.PIPE,stderr=subprocess.PIPE,encoding="utf-8",timeout=9)
+            os.system(('scp -o ConnectTimeout=30 -q -r root@%s:%s %s') % (str(self.name), str(self.target_file), str(self.save_dir)))
         except :
             this_str = "==> " + self.this_info + '\n' + "connect fail !'" + '\n\n'
             print (this_str)

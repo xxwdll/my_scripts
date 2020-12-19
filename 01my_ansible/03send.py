@@ -50,7 +50,8 @@ def gen_ip_fun(args_ip, args_ip_file, IP_FILE):
 def run(IP_FILE, source_file, target_dir):
     ip_lists = []
     machines_info = []
-    ip_file = open(IP_FILE, 'rb')
+    #ip_file = open(IP_FILE, 'rb')
+    ip_file = open(IP_FILE, 'r', encoding="utf-8")
     for li in ip_file :
         if li and '#' not in str(li):
             machines_info.append(str(li))
