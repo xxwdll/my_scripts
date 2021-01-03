@@ -69,7 +69,7 @@ move_fun(){
   read -p '集群名==> ' this_cluster_name
   #read -p '根目录==> ' this_type_info
   this_sql="INSERT INTO "cluster_info" (cluster_name,type_info,command) VALUES('$this_cluster_name', '/u03', 'app_name=''$this_app_name''
-this_ip=\$(ip addr | grep -A3 eth | grep inet | awk ''{print $2}'' | grep -oP ''([0-9]{1,3}\.){3}[0-9]{1,3}'')
+this_ip=\$(ip addr | grep -A3 eth | grep inet | awk ''{print \$2}'' | grep -oP ''([0-9]{1,3}\.){3}[0-9]{1,3}'')
 src_dir=''/u03/backuplog/''\$app_name
 tar_dir=''/mnt/hangyou/app/''\$app_name''/''\$this_ip
 if [ -d \$src_dir ] && [ -d \$tar_dir ];then
