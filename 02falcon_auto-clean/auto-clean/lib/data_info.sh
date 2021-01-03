@@ -74,7 +74,7 @@ src_dir=''/u03/backuplog/''\$app_name
 tar_dir=''/mnt/hangyou/app/''\$app_name''/''\$this_ip
 if [ -d \$src_dir ] && [ -d \$tar_dir ];then
   cd \$src_dir
-  find ./ -mtime +30 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+  find ./ -mtime +30 -type f | grep 20 | grep log | xargs -i mv -f {} \$tar_dir
 fi');"
   echo $this_sql
   read -p 'input "Y" or "y" to continue: ' Isyes
