@@ -1,0 +1,28 @@
+insert into cluster_info (cluster_name,type_info,command) values('ipsIPS_航友_生产集群','/u01',"[ -f '/u01/tomcat7-IPS/logs/catalina.out' ] && cat /dev/null > /u01/tomcat7-IPS/logs/catalina.out");
+
+select command from cluster_info 
+where cluster_name in
+(select cluster_info from app_info where ip="192.168.110.53");
+
+### move
+app_name='fm'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -cmin +60 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+
+
+### gzip
+this_dir='/u03/log/fm/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -name '*20*log' | xargs -i gzip {}
+fi
+
+
+### cat /dev/null
+this_file='/u01/tomcat8-oqas_api/logs'
+[ -f $this_file ] && cat /dev/null > $this_file
