@@ -25,7 +25,7 @@ sql = ("SELECT b.app_ip, a.busniess_name, a.app_name, a.app_cluster, a.app_pgm, 
 "a.app_cluster = b.app_cluster );"
 )
 
-conn = pymysql.connect(host='**********', user='cmdb',passwd='********', db='springcmdb', port=3306, charset='utf8')
+conn = pymysql.connect(host='none-ops.db.chinner.com', user='cmdb',passwd='123456', db='springcmdb', port=3306, charset='utf8')
 cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
 cursor.execute(str(sql),('%:\\\\%','%/%'))

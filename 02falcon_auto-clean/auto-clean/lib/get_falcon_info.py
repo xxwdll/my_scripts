@@ -23,7 +23,7 @@ sql = ("select endpoint, metric, priority, note, timestamp "
 "order by timestamp desc limit 100;"
 )
 
-conn = pymysql.connect(host='*********', user='root',passwd='*********', db='alarms', port=3306, charset='utf8')
+conn = pymysql.connect(host='10.16.20.35', user='root',passwd='123456', db='alarms', port=3306, charset='utf8')
 cursor = conn.cursor(cursor=pymysql.cursors.DictCursor)
 
 cursor.execute(sql % (this_today, this_yesterday))
