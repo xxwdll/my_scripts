@@ -1,0 +1,246 @@
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-01-29_02-13-35
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-01-29_02-13-50
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-01-29_02-14-05
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-01-29_02-14-21
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_02-42-07
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_02-42-22
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_02-42-37
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_02-42-53
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_03-00-13
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_03-00-28
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_03-00-44
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_03-00-59
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-29_09-07-55
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  979M   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  177G  291G  38% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.1T  87% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-29_09-08-11
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  980M   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  177G  291G  38% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.1T  87% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-29_09-08-27
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  980M   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  177G  291G  38% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.1T  87% /mnt/nanhui
+---------
+ip==>  10.21.65.31
+path==>  /u03
+time==>  2021-01-29_13-00-51
+---------
+null
+---------
+ip==>  10.21.65.31
+path==>  /u03
+time==>  2021-01-29_13-01-06
+---------
+null
+---------
+ip==>  10.21.65.31
+path==>  /u03
+time==>  2021-01-29_13-01-21
+---------
+null
+---------
+ip==>  10.21.65.31
+path==>  /u03
+time==>  2021-01-29_13-01-37
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_16-00-07
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_16-00-22
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_16-00-37
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_16-00-53
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_17-00-04
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_17-00-19
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_17-00-35
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_17-00-50
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_18-00-13
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_18-00-28
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_18-00-43
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_18-00-59
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_19-00-07
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_19-00-22
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_19-00-38
+---------
+null
+---------
+ip==>  192.168.113.32
+path==>  /
+time==>  2021-01-29_19-00-53
+---------
+null
+---------

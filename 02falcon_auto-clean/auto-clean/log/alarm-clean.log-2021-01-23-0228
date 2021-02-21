@@ -1,0 +1,293 @@
+ip==>  192.168.110.157
+path==>  /u03
+time==>  2021-01-22_06-12-31
+---------
+this_dir='/u03/log/ftms/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+app_name='ftms'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -mtime +20 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.0G   13G  36% /
+tmpfs                               3.9G   72K  3.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.4G   15G  24% /u01
+/dev/mapper/VolGroup-u02lv           20G  254M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G   14G  5.0G  74% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.6T  69% /mnt/hangyou
+---------
+ip==>  192.168.111.108
+path==>  /u03
+time==>  2021-01-22_06-51-21
+---------
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+tar_dir='/mnt/hangyou/app/fds-main/'$this_ip
+if [ -d '/u03/log/fds-main/log4j/' ] && [ -d $tar_dir ];then
+  cd /u03/log/fds-main/log4j/
+  find ./ -cmin +60 -type f | grep 20 | grep log |grep gz$ | xargs -i mv -f {} $tar_dir
+fi
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+tar_dir='/mnt/hangyou/app/fds-main/'$this_ip
+if [ -d '/u03/backuplog/fds-main/' ] && [ -d $tar_dir ];then
+  cd /u03/backuplog/fds-main/
+  find ./ -mtime +3 -type f | grep 20 | grep log | grep gz$ | xargs -i mv -f {} $tar_dir
+fi
+df -h
+Killed by signal 15.
+ip==>  192.168.110.157
+path==>  /u03
+time==>  2021-01-22_09-48-33
+---------
+this_dir='/u03/log/ftms/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+app_name='ftms'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -mtime +20 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.0G   13G  36% /
+tmpfs                               3.9G   72K  3.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.5G   15G  24% /u01
+/dev/mapper/VolGroup-u02lv           20G  254M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G   15G  4.4G  77% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.4T  70% /mnt/hangyou
+---------
+ip==>  192.168.110.157
+path==>  /u03
+time==>  2021-01-22_12-11-24
+---------
+this_dir='/u03/log/ftms/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+app_name='ftms'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -mtime +20 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.0G   13G  36% /
+tmpfs                               3.9G   72K  3.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.4G   15G  24% /u01
+/dev/mapper/VolGroup-u02lv           20G  254M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G   15G  4.4G  77% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.4T  70% /mnt/hangyou
+---------
+ip==>  192.168.110.157
+path==>  /u03
+time==>  2021-01-22_15-44-34
+---------
+this_dir='/u03/log/ftms/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+app_name='ftms'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -mtime +20 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.0G   13G  36% /
+tmpfs                               3.9G   72K  3.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.4G   15G  24% /u01
+/dev/mapper/VolGroup-u02lv           20G  254M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G   15G  4.5G  77% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.3T  71% /mnt/hangyou
+---------
+ip==>  192.168.198.36
+path==>  /u03
+time==>  2021-01-22_17-15-41
+---------
+this_file='/u03/logs/task/springtour-job-admin.log'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  8.3G   12G  43% /
+tmpfs                               7.8G   44K  7.8G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.2G   16G  17% /u01
+/dev/mapper/VolGroup-u02lv           20G  560M   19G   3% /u02
+/dev/mapper/VolGroup-u03lv           20G   13G  6.2G  68% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         7.8G     0  7.8G   0% /cgroup
+//192.168.190.100/backupall         200G  167G   34G  84% /mnt/backupall
+---------
+ip==>  192.168.198.36
+path==>  /u03
+time==>  2021-01-22_17-15-59
+---------
+this_file='/u03/logs/task/springtour-job-admin.log'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  8.3G   12G  43% /
+tmpfs                               7.8G   44K  7.8G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.2G   16G  17% /u01
+/dev/mapper/VolGroup-u02lv           20G  560M   19G   3% /u02
+/dev/mapper/VolGroup-u03lv           20G   13G  6.2G  68% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         7.8G     0  7.8G   0% /cgroup
+//192.168.190.100/backupall         200G  167G   34G  84% /mnt/backupall
+---------
+ip==>  192.168.198.36
+path==>  /u03
+time==>  2021-01-22_17-16-14
+---------
+this_file='/u03/logs/task/springtour-job-admin.log'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  8.3G   12G  43% /
+tmpfs                               7.8G   44K  7.8G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.2G   16G  17% /u01
+/dev/mapper/VolGroup-u02lv           20G  560M   19G   3% /u02
+/dev/mapper/VolGroup-u03lv           20G   13G  6.2G  68% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         7.8G     0  7.8G   0% /cgroup
+//192.168.190.100/backupall         200G  167G   34G  84% /mnt/backupall
+---------
+ip==>  192.168.110.13
+path==>  /u03
+time==>  2021-01-22_18-23-11
+---------
+app_name='CPS'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -cmin +60 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+this_dir='/u03/log/CPS/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -name '*20*log' | xargs -i gzip {}
+fi
+df -h
+Filesystem                                                   Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root                            21G  7.0G   13G  36% /
+tmpfs                                                        3.9G   68K  3.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv                                    20G  4.0G   15G  22% /u01
+/dev/mapper/VolGroup-u02lv                                    20G  273M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv                                    20G  2.1G   17G  11% /u03
+/dev/sda1                                                    194M   35M  150M  19% /boot
+cgroup_root                                                  3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak                                     18T   12T  5.9T  67% /mnt/hangyou
+38cfa4b76a-xfl20.cn-shanghai.nas.aliyuncs.com:/cps_crewfile   10P  1.0M   10P   1% /u05/cps_crewfile
+192.168.110.21:/focfile/focfileqt                            7.7T  5.8T  1.9T  76% /u05/foc2file
+---------
+ip==>  192.168.111.230
+path==>  /u03
+time==>  2021-01-23_01-47-41
+---------
+app_name='ewins'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -cmin +60 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+this_dir='/u03/log/ewins/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -name '*20*log' | xargs -i gzip {}
+fi
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.5G   12G  39% /
+tmpfs                               4.9G   44K  4.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G   11G  8.1G  57% /u01
+/dev/mapper/VolGroup-u02lv           20G  263M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G  1.8G   17G  10% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         4.9G     0  4.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   12T  5.8T  68% /mnt/hangyou
+192.168.110.21:/focfile/focfileqt   7.7T  5.7T  2.0T  75% /u05/foc2file
+---------
+ip==>  192.168.111.230
+path==>  /u03
+time==>  2021-01-23_01-47-41
+---------
+app_name='ewins'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -cmin +60 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+this_dir='/u03/log/ewins/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -name '*20*log' | xargs -i gzip {}
+fi
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.5G   12G  39% /
+tmpfs                               4.9G   44K  4.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G   11G  8.1G  57% /u01
+/dev/mapper/VolGroup-u02lv           20G  263M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G  1.8G   17G  10% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         4.9G     0  4.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   12T  5.8T  68% /mnt/hangyou
+192.168.110.21:/focfile/focfileqt   7.7T  5.7T  2.0T  75% /u05/foc2file
+---------
+ip==>  192.168.110.218
+path==>  /var
+time==>  2021-01-23_02-12-02
+---------
+null
+---------
+ip==>  192.168.110.218
+path==>  /var
+time==>  2021-01-23_02-12-17
+---------
+null
+---------
+ip==>  192.168.110.218
+path==>  /var
+time==>  2021-01-23_02-12-33
+---------
+null
+---------
+ip==>  192.168.110.218
+path==>  /var
+time==>  2021-01-23_02-12-48
+---------
+null
+---------

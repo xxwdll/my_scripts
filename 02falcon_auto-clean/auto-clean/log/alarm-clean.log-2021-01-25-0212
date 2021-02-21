@@ -1,0 +1,296 @@
+ip==>  192.168.110.238
+path==>  /u01
+time==>  2021-01-24_05-29-47
+---------
+null
+---------
+ip==>  192.168.110.238
+path==>  /u01
+time==>  2021-01-24_05-30-02
+---------
+null
+---------
+ip==>  192.168.110.238
+path==>  /u01
+time==>  2021-01-24_05-30-17
+---------
+null
+---------
+ip==>  192.168.110.238
+path==>  /u01
+time==>  2021-01-24_05-30-32
+---------
+null
+---------
+ip==>  192.168.110.238
+path==>  /u01
+time==>  2021-01-24_06-00-06
+---------
+null
+---------
+ip==>  192.168.110.238
+path==>  /u01
+time==>  2021-01-24_06-00-22
+---------
+null
+---------
+ip==>  192.168.110.238
+path==>  /u01
+time==>  2021-01-24_06-00-37
+---------
+null
+---------
+ip==>  192.168.110.238
+path==>  /u01
+time==>  2021-01-24_06-00-52
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /u02
+time==>  2021-01-24_12-12-54
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /u02
+time==>  2021-01-24_12-13-10
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /u02
+time==>  2021-01-24_12-13-25
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /u02
+time==>  2021-01-24_12-13-40
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /u02
+time==>  2021-01-24_13-00-03
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /u02
+time==>  2021-01-24_13-00-18
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /u02
+time==>  2021-01-24_13-00-33
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /u02
+time==>  2021-01-24_13-00-49
+---------
+null
+---------
+ip==>  192.168.110.109
+path==>  /u03
+time==>  2021-01-24_16-03-13
+---------
+if [ -d '/u03/log/token/log4j/' ];then
+  cd /u03/log/token/log4j/
+  find ./ -mtime +3 -type f | grep log | grep -v \.gz$ | grep 20 | xargs -i gzip {}
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.5G  3.8G  60% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  429M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  8.1G   11G  45% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.8G  4.5G  52% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  655M  8.6G   7% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+//dd.chinner.com/hylogbak
+                       18T   14T  4.6T  75% /mnt/hangyou
+---------
+ip==>  192.168.198.36
+path==>  /u03
+time==>  2021-01-24_16-31-36
+---------
+this_file='/u03/logs/task/springtour-job-admin.log'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  8.3G   12G  43% /
+tmpfs                               7.8G   44K  7.8G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.2G   16G  17% /u01
+/dev/mapper/VolGroup-u02lv           20G  560M   19G   3% /u02
+/dev/mapper/VolGroup-u03lv           20G   13G  6.1G  68% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         7.8G     0  7.8G   0% /cgroup
+//192.168.190.100/backupall         200G  172G   29G  86% /mnt/backupall
+---------
+ip==>  192.168.198.36
+path==>  /u03
+time==>  2021-01-24_16-31-54
+---------
+this_file='/u03/logs/task/springtour-job-admin.log'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  8.3G   12G  43% /
+tmpfs                               7.8G   44K  7.8G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.2G   16G  17% /u01
+/dev/mapper/VolGroup-u02lv           20G  560M   19G   3% /u02
+/dev/mapper/VolGroup-u03lv           20G   13G  6.1G  68% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         7.8G     0  7.8G   0% /cgroup
+//192.168.190.100/backupall         200G  172G   29G  86% /mnt/backupall
+---------
+ip==>  192.168.198.36
+path==>  /u03
+time==>  2021-01-24_16-32-09
+---------
+this_file='/u03/logs/task/springtour-job-admin.log'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  8.3G   12G  43% /
+tmpfs                               7.8G   44K  7.8G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.2G   16G  17% /u01
+/dev/mapper/VolGroup-u02lv           20G  560M   19G   3% /u02
+/dev/mapper/VolGroup-u03lv           20G   13G  6.1G  68% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         7.8G     0  7.8G   0% /cgroup
+//192.168.190.100/backupall         200G  172G   29G  86% /mnt/backupall
+---------
+ip==>  192.168.110.54
+path==>  /u01
+time==>  2021-01-24_19-34-46
+---------
+[ -f '/u01/tomcat7-IPS/logs/catalina.out' ] && cat /dev/null > /u01/tomcat7-IPS/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.4G  3.8G  59% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  395M  8.9G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  1.1G   18G   6% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.1G  5.1G  45% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  407M  8.8G   5% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+//192.168.0.167/hylogbak
+                       18T   13T  5.6T  69% /mnt/hangyou
+---------
+ip==>  192.168.110.54
+path==>  /u01
+time==>  2021-01-24_19-35-12
+---------
+[ -f '/u01/tomcat7-IPS/logs/catalina.out' ] && cat /dev/null > /u01/tomcat7-IPS/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.4G  3.8G  59% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  395M  8.9G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  1.1G   18G   6% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.1G  5.1G  45% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  407M  8.8G   5% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+//192.168.0.167/hylogbak
+                       18T   13T  5.6T  69% /mnt/hangyou
+---------
+ip==>  192.168.110.54
+path==>  /u01
+time==>  2021-01-24_19-35-27
+---------
+[ -f '/u01/tomcat7-IPS/logs/catalina.out' ] && cat /dev/null > /u01/tomcat7-IPS/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.4G  3.8G  59% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  395M  8.9G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  1.1G   18G   6% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.1G  5.1G  45% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  407M  8.8G   5% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+//192.168.0.167/hylogbak
+                       18T   13T  5.6T  69% /mnt/hangyou
+---------
+ip==>  192.168.190.11
+path==>  /u03
+time==>  2021-01-24_19-45-39
+---------
+null
+---------
+ip==>  192.168.190.11
+path==>  /u03
+time==>  2021-01-24_19-45-54
+---------
+null
+---------
+ip==>  192.168.190.11
+path==>  /u03
+time==>  2021-01-24_19-46-10
+---------
+null
+---------
+ip==>  192.168.190.11
+path==>  /u03
+time==>  2021-01-24_19-46-25
+---------
+null
+---------
+ip==>  192.168.190.11
+path==>  /u03
+time==>  2021-01-24_20-00-11
+---------
+null
+---------
+ip==>  192.168.190.11
+path==>  /u03
+time==>  2021-01-24_20-00-26
+---------
+null
+---------
+ip==>  192.168.190.11
+path==>  /u03
+time==>  2021-01-24_20-00-41
+---------
+null
+---------
+ip==>  192.168.190.11
+path==>  /u03
+time==>  2021-01-24_20-00-57
+---------
+null
+---------

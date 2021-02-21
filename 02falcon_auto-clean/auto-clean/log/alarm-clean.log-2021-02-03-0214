@@ -1,0 +1,1027 @@
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-02_05-32-01
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.1G   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  179G  290G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.7T  89% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-02_05-32-18
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.1G   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  179G  290G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.7T  89% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-02_05-32-33
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.1G   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  179G  290G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.7T  89% /mnt/nanhui
+---------
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/pymysql/connections.py", line 581, in connect
+    sock = socket.create_connection(
+  File "/usr/local/python3/lib/python3.8/socket.py", line 807, in create_connection
+    raise err
+  File "/usr/local/python3/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./get_falcon_info.py", line 26, in <module>
+    conn = pymysql.connect(host='10.16.20.35', user='root',passwd='123456', db='alarms', port=3306, charset='utf8')
+  File "/usr/local/python3/lib/python3.8/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/python3/lib/python3.8/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '10.16.20.35' ([Errno 101] Network is unreachable)")
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_09-47-20
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_09-47-36
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_09-47-51
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_09-48-06
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_10-00-05
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_10-00-21
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_10-00-36
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_10-00-51
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_11-00-12
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_11-00-28
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_11-00-43
+---------
+null
+---------
+ip==>  10.16.39.31
+path==>  /u01
+time==>  2021-02-02_11-00-58
+---------
+null
+---------
+ip==>  192.168.0.115
+path==>  /u03
+time==>  2021-02-02_15-41-46
+---------
+null
+---------
+ip==>  192.168.0.115
+path==>  /u03
+time==>  2021-02-02_15-42-01
+---------
+null
+---------
+ip==>  192.168.0.115
+path==>  /u03
+time==>  2021-02-02_15-42-17
+---------
+null
+---------
+ip==>  192.168.0.115
+path==>  /u03
+time==>  2021-02-02_15-42-32
+---------
+null
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_20-53-19
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_20-53-37
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_20-53-53
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-00-00
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-00-16
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-00-32
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-02_21-12-01
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.9G   17G  10% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  186G  283G  40% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.1T  87% /mnt/nanhui
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-12-01
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-02_21-12-20
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.9G   17G  10% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  186G  283G  40% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.1T  87% /mnt/nanhui
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-12-20
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-02_21-12-36
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.9G   17G  10% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  186G  283G  40% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.1T  87% /mnt/nanhui
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-12-36
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-02_21-12-52
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.9G   17G  10% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  186G  283G  40% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.1T  87% /mnt/nanhui
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-12-52
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-13-08
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_21-13-24
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_22-00-02
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_22-00-17
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_22-00-33
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_23-00-11
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_23-00-27
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-02_23-00-43
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-03_00-00-07
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-03_00-00-25
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-03_00-00-41
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  410M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.4G  86% /u03
+---------
+ip==>  10.16.39.77
+path==>  /u03
+time==>  2021-02-03_02-00-07
+---------
+if [ -d '/u03/log/ec' ];then
+  cd /u03/log/ec
+  find ./ -mtime +1 -type f | grep log | grep -v \.gz$ | grep 20 | xargs -i gzip {}
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                       20G  9.6G  8.8G  53% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  173M   19G   1% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  6.1G   33G  16% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  6.8G   12G  37% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G   16K  7.8G   1% /cgroup
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-03_02-13-35
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  4.0T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  4.0T  90% /manifest
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-03_02-13-53
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  4.0T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  4.0T  90% /manifest
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-03_02-14-09
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  4.0T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  4.0T  90% /manifest
+---------

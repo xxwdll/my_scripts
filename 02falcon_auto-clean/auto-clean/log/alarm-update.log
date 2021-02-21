@@ -1,0 +1,1282 @@
+Wed Dec  9 05:52:56 CST 2020
+check...
+ok
+need update..
+Thu Dec 10 22:31:27 CST 2020
+check...
+ok
+pass
+Fri Dec 11 22:19:32 CST 2020
+check...
+ok
+pass
+Sat Dec 12 22:17:54 CST 2020
+check...
+ok
+pass
+Sun Dec 13 22:18:01 CST 2020
+check...
+ok
+pass
+Tue Dec 15 06:22:14 CST 2020
+check...
+ok
+pass
+Tue Dec 15 22:22:03 CST 2020
+check...
+ok
+need update..
+Thu Dec 17 00:06:38 CST 2020
+check...
+ok
+need update..
+Sun Dec 20 02:26:12 CST 2020
+check...
+ok
+need update..
+Mon Dec 21 02:14:05 CST 2020
+check...
+ok
+pass
+Wed Dec 23 02:24:52 CST 2020
+check...
+ok
+need update..
+Sat Dec 26 02:40:54 CST 2020
+check...
+ok
+pass
+Sun Dec 27 02:29:34 CST 2020
+check...
+ok
+pass
+Mon Dec 28 05:12:49 CST 2020
+check...
+ok
+pass
+Thu Dec 31 03:53:43 CST 2020
+check...
+ok
+pass
+Fri Jan  1 02:08:17 CST 2021
+check...
+ok
+pass
+Sat Jan  2 03:28:09 CST 2021
+check...
+ok
+pass
+Sun Jan  3 02:13:49 CST 2021
+check...
+ok
+pass
+Mon Jan  4 05:02:41 CST 2021
+check...
+ok
+pass
+Tue Jan  5 02:38:05 CST 2021
+check...
+ok
+pass
+Wed Jan  6 02:24:29 CST 2021
+check...
+ok
+pass
+Thu Jan  7 02:09:37 CST 2021
+check...
+ok
+pass
+Fri Jan  8 02:36:23 CST 2021
+check...
+ok
+pass
+Sat Jan  9 02:16:50 CST 2021
+check...
+ok
+pass
+Sun Jan 10 02:47:48 CST 2021
+check...
+ok
+pass
+Mon Jan 11 02:38:37 CST 2021
+check...
+ok
+pass
+Tue Jan 12 02:47:57 CST 2021
+check...
+ok
+need update..
+Tue Jan 12 18:58:25 CST 2021
+check...
+ok
+pass
+Wed Jan 13 02:40:02 CST 2021
+check...
+ok
+pass
+Thu Jan 14 02:14:09 CST 2021
+check...
+ok
+pass
+Fri Jan 15 03:35:46 CST 2021
+check...
+ok
+need update..
+SQL error: database is locked
+update data==>
+192.168.113.152|redis_auto_installredis_部署集群
+10.16.27.41|bhh-pbmbhh-pbm集群
+10.16.27.40|bhh-pbmbhh-pbm集群
+192.168.0.114|stalkstalk_航友_生产集群
+done! Fri Jan 15 03:52:21 CST 2021
+Sat Jan 16 02:22:31 CST 2021
+check...
+ok
+need update..
+SQL error: database is locked
+SQL error: database is locked
+update data==>
+done! Sat Jan 16 02:39:19 CST 2021
+Sun Jan 17 03:55:19 CST 2021
+check...
+ok
+need update..
+SQL error: database is locked
+SQL error: database is locked
+SQL error: database is locked
+SQL error: database is locked
+SQL error: database is locked
+update data==>
+done! Sun Jan 17 04:12:21 CST 2021
+Mon Jan 18 02:08:43 CST 2021
+check...
+ok
+need update..
+update data==>
+done! Mon Jan 18 02:25:35 CST 2021
+Tue Jan 19 02:07:43 CST 2021
+check...
+ok
+pass
+Wed Jan 20 02:23:43 CST 2021
+check...
+ok
+pass
+Thu Jan 21 02:56:45 CST 2021
+check...
+ok
+need update..
+update data==>
+172.17.113.6|dcs-taskdcs-task_克拉玛依_生产集群-手工重启
+172.17.113.6|dcs-serverdcs-server_克拉玛依_生产集群-手工重启
+172.17.113.6|dcs-iapi-client-site南京外站集群-手工重启
+172.17.113.6|activeMQ-winLG-手动重启activeMQ-win- 克拉玛依_生产集群
+172.17.113.6|security-union-parent-手动重启security-union-parent_克拉玛依_生产集群
+done! Thu Jan 21 03:13:42 CST 2021
+Fri Jan 22 02:31:52 CST 2021
+check...
+ok
+pass
+Sat Jan 23 02:28:21 CST 2021
+check...
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1004, in _send_output
+    self.send(msg)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 944, in send
+    self.connect()
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x2b585fb3f0d0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.188.184', port=80): Max retries exceeded with url: /app/5e68dec49f1d3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2b585fb3f0d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./get_app_info_new.py", line 99, in <module>
+    cluster_info = get_application_ip(app_id)
+  File "./get_app_info_new.py", line 66, in get_application_ip
+    response = requests.get(
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.188.184', port=80): Max retries exceeded with url: /app/5e68dec49f1d3 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2b585fb3f0d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+ok
+need update..
+update data==>
+172.17.115.5|dcs-task dcs-task_襄阳_生产集群-手工重启
+172.17.115.5|dcs-serverdcs-server_襄阳_生产集群-手工重启
+done! Sat Jan 23 02:42:03 CST 2021
+Sun Jan 24 02:39:05 CST 2021
+check...
+ok
+need update..
+update data==>
+done! Sun Jan 24 02:55:31 CST 2021
+Mon Jan 25 02:12:41 CST 2021
+check...
+ok
+pass
+Tue Jan 26 02:16:49 CST 2021
+check...
+ok
+need update..
+update data==>
+done! Tue Jan 26 02:33:41 CST 2021
+Wed Jan 27 02:17:00 CST 2021
+check...
+ok
+pass
+Thu Jan 28 02:42:35 CST 2021
+check...
+ok
+pass
+Fri Jan 29 02:09:46 CST 2021
+check...
+ok
+pass
+Fri Jan 29 21:15:29 CST 2021
+check...
+ok
+pass
+Sat Jan 30 16:23:46 CST 2021
+check...
+ok
+pass
+Sun Jan 31 12:10:44 CST 2021
+check...
+ok
+pass
+Mon Feb  1 07:37:39 CST 2021
+check...
+ok
+pass
+Tue Feb  2 02:58:21 CST 2021
+check...
+ok
+pass
+Wed Feb  3 02:14:24 CST 2021
+check...
+ok
+pass
+Thu Feb  4 02:38:26 CST 2021
+check...
+ok
+need update..
+update data==>
+192.168.183.101|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.100|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.102|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.103|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.185|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.186|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.187|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.188|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.189|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.190|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.191|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.192|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.193|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.194|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.197|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.198|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.199|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.200|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.201|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.202|AirSalesWSCustAirSalesWSCust_电信_秒杀生产集群20210205上线
+192.168.183.23|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.21|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.29|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.30|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.39|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.31|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.35|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.42|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+10.21.34.102|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.47|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.48|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.51|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.54|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.20|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.27|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.22|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.25|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.33|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.37|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.34|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.40|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+10.21.34.100|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.43|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.45|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.49|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.57|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.58|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.55|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.24|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.26|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.28|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.50|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.36|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.32|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.38|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.41|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+10.21.34.101|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.46|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.44|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.53|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.56|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.52|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.59|miaoshaV4.0miaoshav4_秒杀生产集群-20210205秒杀上线
+192.168.183.167|nginx_DianShangnginx_DianShang_20210205秒杀生产集群上线
+192.168.183.168|nginx_DianShangnginx_DianShang_20210205秒杀生产集群上线
+192.168.183.169|nginx_DianShangnginx_DianShang_20210205秒杀生产集群上线
+192.168.184.28|SpringIMUserRouteServerSpringIMUserRouteServer预上线集群
+192.168.183.220|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.221|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.222|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.223|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.224|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.225|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.226|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.227|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.228|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.229|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.230|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.231|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.232|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.233|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.234|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.235|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.236|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.237|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.238|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.239|passport.ch.compassport.ch.com_秒杀_生产集群-20210205秒杀上线
+192.168.183.80|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.81|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.82|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.83|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.84|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.85|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.86|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.87|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+10.21.34.110|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+10.21.34.111|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+10.21.34.112|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.88|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.89|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.98|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.94|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.99|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.96|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.95|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.91|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.90|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.92|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.93|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.183.97|ShareServiceShareService_秒杀生产集群20210205-阿里云3个节点不用更新上线
+192.168.184.28|SpringIMMQConsumerSpringIMMQConsumer预上线集群
+done! Thu Feb 4 02:54:42 CST 2021
+Fri Feb  5 15:19:28 CST 2021
+check...
+ok
+need update..
+update data==>
+10.15.32.127|SmsSms_预上线集群
+done! Fri Feb 5 15:36:25 CST 2021
+Fri Feb  5 17:26:37 CST 2021
+check...
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1004, in _send_output
+    self.send(msg)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 944, in send
+    self.connect()
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x2b2f61ac5970>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.188.184', port=80): Max retries exceeded with url: /app/5dad76751ac41 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2b2f61ac5970>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./get_app_info_new.py", line 99, in <module>
+    cluster_info = get_application_ip(app_id)
+  File "./get_app_info_new.py", line 66, in get_application_ip
+    response = requests.get(
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.188.184', port=80): Max retries exceeded with url: /app/5dad76751ac41 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2b2f61ac5970>: Failed to establish a new connection: [Errno 111] Connection refused'))
+ok
+need update..
+update data==>
+done! Fri Feb 5 17:39:17 CST 2021
+Fri Feb  5 19:33:45 CST 2021
+check...
+ok
+need update..
+update data==>
+done! Fri Feb 5 19:50:06 CST 2021
+Fri Feb  5 21:40:55 CST 2021
+check...
+ok
+pass
+Fri Feb  5 23:48:02 CST 2021
+check...
+ok
+pass
+Sat Feb  6 01:55:20 CST 2021
+check...
+ok
+pass
+Sat Feb  6 04:02:35 CST 2021
+check...
+ok
+pass
+Sat Feb  6 06:09:45 CST 2021
+check...
+ok
+pass
+Sat Feb  6 09:09:00 CST 2021
+check...
+ok
+pass
+Sat Feb  6 11:16:09 CST 2021
+check...
+ok
+pass
+Sat Feb  6 13:23:17 CST 2021
+check...
+ok
+pass
+Sat Feb  6 15:30:27 CST 2021
+check...
+ok
+pass
+Sat Feb  6 17:37:35 CST 2021
+check...
+ok
+pass
+Sat Feb  6 19:44:46 CST 2021
+check...
+ok
+pass
+Sat Feb  6 21:51:54 CST 2021
+check...
+ok
+pass
+Sat Feb  6 23:59:11 CST 2021
+check...
+ok
+pass
+Sun Feb  7 02:42:36 CST 2021
+check...
+ok
+pass
+Sun Feb  7 04:50:02 CST 2021
+check...
+ok
+pass
+Sun Feb  7 06:57:40 CST 2021
+check...
+Sun Feb  7 09:09:03 CST 2021
+check...
+ok
+pass
+Sun Feb  7 11:16:14 CST 2021
+check...
+ok
+pass
+Sun Feb  7 13:23:24 CST 2021
+check...
+ok
+pass
+Sun Feb  7 15:30:58 CST 2021
+check...
+ok
+pass
+Sun Feb  7 17:38:06 CST 2021
+check...
+ok
+need update..
+update data==>
+10.16.36.81|gaia电信添加node宝信集群
+10.16.36.80|gaia电信添加node宝信集群
+10.16.36.82|gaia电信添加node宝信集群
+10.16.36.83|gaia电信添加node宝信集群
+10.16.36.84|gaia电信添加node宝信集群
+10.16.36.89|gaia电信添加node宝信集群
+10.16.36.85|gaia电信添加node宝信集群
+10.16.36.86|gaia电信添加node宝信集群
+10.16.36.87|gaia电信添加node宝信集群
+10.16.36.88|gaia电信添加node宝信集群
+done! Sun Feb 7 17:53:52 CST 2021
+Sun Feb  7 19:45:16 CST 2021
+check...
+ok
+pass
+Sun Feb  7 21:52:25 CST 2021
+check...
+ok
+pass
+Sun Feb  7 23:59:34 CST 2021
+check...
+ok
+pass
+Mon Feb  8 02:21:50 CST 2021
+check...
+ok
+pass
+Mon Feb  8 04:29:01 CST 2021
+check...
+ok
+pass
+Mon Feb  8 06:36:12 CST 2021
+check...
+ok
+pass
+Mon Feb  8 09:12:34 CST 2021
+check...
+ok
+pass
+Mon Feb  8 11:19:44 CST 2021
+check...
+ok
+pass
+Mon Feb  8 13:26:53 CST 2021
+check...
+ok
+pass
+Mon Feb  8 15:34:03 CST 2021
+check...
+ok
+pass
+Mon Feb  8 17:41:14 CST 2021
+check...
+ok
+need update..
+update data==>
+10.16.32.224|logchecklogcheck集群
+10.16.32.225|logchecklogcheck集群
+10.16.32.226|logchecklogcheck集群
+10.16.32.220|logtransferlogtransfer集群
+10.16.32.221|logtransferlogtransfer集群
+10.16.32.222|logtransferlogtransfer集群
+10.16.32.223|logtransferlogtransfer集群
+done! Mon Feb 8 17:57:46 CST 2021
+Mon Feb  8 19:48:35 CST 2021
+check...
+ok
+pass
+Mon Feb  8 21:55:47 CST 2021
+check...
+ok
+pass
+Tue Feb  9 00:03:02 CST 2021
+check...
+ok
+pass
+Tue Feb  9 02:11:53 CST 2021
+check...
+ok
+pass
+Tue Feb  9 04:19:14 CST 2021
+check...
+ok
+pass
+Tue Feb  9 06:26:25 CST 2021
+check...
+ok
+pass
+Tue Feb  9 09:09:04 CST 2021
+check...
+ok
+pass
+Tue Feb  9 11:16:13 CST 2021
+check...
+ok
+pass
+Tue Feb  9 13:23:22 CST 2021
+check...
+ok
+pass
+Tue Feb  9 15:30:36 CST 2021
+check...
+ok
+need update..
+update data==>
+10.16.32.30|logportablelogportable线上集群
+10.16.32.31|logportablelogportable线上集群
+done! Tue Feb 9 15:47:05 CST 2021
+Tue Feb  9 17:37:44 CST 2021
+check...
+ok
+pass
+Tue Feb  9 19:44:56 CST 2021
+check...
+ok
+pass
+Tue Feb  9 21:52:06 CST 2021
+check...
+ok
+pass
+Tue Feb  9 23:59:15 CST 2021
+check...
+ok
+pass
+Wed Feb 10 02:06:32 CST 2021
+check...
+ok
+pass
+Wed Feb 10 04:13:45 CST 2021
+check...
+ok
+pass
+Wed Feb 10 06:20:56 CST 2021
+check...
+ok
+pass
+Wed Feb 10 09:08:58 CST 2021
+check...
+ok
+pass
+Wed Feb 10 11:16:07 CST 2021
+check...
+ok
+pass
+Wed Feb 10 13:23:15 CST 2021
+check...
+ok
+pass
+Wed Feb 10 15:30:25 CST 2021
+check...
+ok
+pass
+Wed Feb 10 17:37:34 CST 2021
+check...
+ok
+pass
+Wed Feb 10 19:54:05 CST 2021
+check...
+ok
+pass
+Wed Feb 10 22:01:16 CST 2021
+check...
+ok
+pass
+Thu Feb 11 00:09:08 CST 2021
+check...
+ok
+pass
+Thu Feb 11 02:26:45 CST 2021
+check...
+ok
+pass
+Thu Feb 11 04:34:03 CST 2021
+check...
+ok
+pass
+Thu Feb 11 06:41:16 CST 2021
+check...
+ok
+pass
+Thu Feb 11 09:09:05 CST 2021
+check...
+ok
+pass
+Thu Feb 11 11:16:18 CST 2021
+check...
+ok
+pass
+Thu Feb 11 13:23:31 CST 2021
+check...
+ok
+pass
+Thu Feb 11 15:30:43 CST 2021
+check...
+ok
+pass
+Thu Feb 11 17:37:53 CST 2021
+check...
+ok
+pass
+Thu Feb 11 19:45:56 CST 2021
+check...
+ok
+pass
+Thu Feb 11 21:53:09 CST 2021
+check...
+ok
+pass
+Fri Feb 12 00:00:24 CST 2021
+check...
+ok
+pass
+Fri Feb 12 02:07:43 CST 2021
+check...
+ok
+pass
+Fri Feb 12 04:14:59 CST 2021
+check...
+ok
+pass
+Fri Feb 12 06:22:13 CST 2021
+check...
+ok
+pass
+Fri Feb 12 09:09:04 CST 2021
+check...
+ok
+pass
+Fri Feb 12 11:21:47 CST 2021
+check...
+ok
+pass
+Fri Feb 12 13:28:59 CST 2021
+check...
+ok
+pass
+Fri Feb 12 16:04:35 CST 2021
+check...
+ok
+pass
+Fri Feb 12 18:11:48 CST 2021
+check...
+ok
+pass
+Fri Feb 12 20:18:59 CST 2021
+check...
+ok
+pass
+Fri Feb 12 22:26:13 CST 2021
+check...
+ok
+pass
+Sat Feb 13 00:39:48 CST 2021
+check...
+ok
+pass
+Sat Feb 13 02:47:05 CST 2021
+check...
+ok
+pass
+Sat Feb 13 04:54:21 CST 2021
+check...
+ok
+pass
+Sat Feb 13 09:09:04 CST 2021
+check...
+ok
+pass
+Sat Feb 13 11:16:14 CST 2021
+check...
+ok
+pass
+Sat Feb 13 13:23:22 CST 2021
+check...
+ok
+pass
+Sat Feb 13 15:30:29 CST 2021
+check...
+ok
+pass
+Sat Feb 13 17:37:36 CST 2021
+check...
+ok
+pass
+Sat Feb 13 19:44:50 CST 2021
+check...
+ok
+pass
+Sat Feb 13 22:01:26 CST 2021
+check...
+ok
+pass
+Sun Feb 14 00:08:40 CST 2021
+check...
+ok
+pass
+Sun Feb 14 02:19:52 CST 2021
+check...
+ok
+pass
+Sun Feb 14 04:27:01 CST 2021
+check...
+ok
+pass
+Sun Feb 14 06:34:10 CST 2021
+check...
+ok
+pass
+Sun Feb 14 09:09:00 CST 2021
+check...
+ok
+pass
+Sun Feb 14 11:16:06 CST 2021
+check...
+ok
+pass
+Sun Feb 14 13:23:13 CST 2021
+check...
+ok
+pass
+Sun Feb 14 15:30:24 CST 2021
+check...
+ok
+pass
+Sun Feb 14 17:37:34 CST 2021
+check...
+ok
+pass
+Sun Feb 14 19:48:36 CST 2021
+check...
+ok
+pass
+Sun Feb 14 21:55:44 CST 2021
+check...
+ok
+pass
+Mon Feb 15 00:02:57 CST 2021
+check...
+ok
+pass
+Mon Feb 15 02:17:57 CST 2021
+check...
+ok
+pass
+Mon Feb 15 04:34:59 CST 2021
+check...
+ok
+pass
+Mon Feb 15 06:42:10 CST 2021
+check...
+ok
+pass
+Mon Feb 15 09:08:53 CST 2021
+check...
+ok
+pass
+Mon Feb 15 11:16:01 CST 2021
+check...
+ok
+pass
+Mon Feb 15 13:23:07 CST 2021
+check...
+ok
+pass
+Mon Feb 15 15:30:14 CST 2021
+check...
+ok
+pass
+Mon Feb 15 17:37:42 CST 2021
+check...
+ok
+pass
+Mon Feb 15 19:44:50 CST 2021
+check...
+ok
+pass
+Mon Feb 15 21:51:58 CST 2021
+check...
+ok
+pass
+Tue Feb 16 00:05:25 CST 2021
+check...
+ok
+pass
+Tue Feb 16 02:12:36 CST 2021
+check...
+ok
+pass
+Tue Feb 16 04:19:49 CST 2021
+check...
+ok
+pass
+Tue Feb 16 06:26:56 CST 2021
+check...
+ok
+pass
+Tue Feb 16 09:08:50 CST 2021
+check...
+ok
+pass
+Tue Feb 16 11:15:56 CST 2021
+check...
+ok
+pass
+Tue Feb 16 13:23:33 CST 2021
+check...
+ok
+pass
+Tue Feb 16 15:30:42 CST 2021
+check...
+ok
+pass
+Tue Feb 16 17:37:49 CST 2021
+check...
+ok
+pass
+Tue Feb 16 20:11:31 CST 2021
+check...
+ok
+pass
+Tue Feb 16 22:18:38 CST 2021
+check...
+ok
+pass
+Wed Feb 17 00:25:53 CST 2021
+check...
+ok
+pass
+Wed Feb 17 02:33:06 CST 2021
+check...
+ok
+pass
+Wed Feb 17 04:40:17 CST 2021
+check...
+ok
+pass
+Wed Feb 17 06:47:27 CST 2021
+check...
+Wed Feb 17 09:08:50 CST 2021
+check...
+ok
+pass
+Wed Feb 17 11:15:57 CST 2021
+check...
+ok
+pass
+Wed Feb 17 13:23:03 CST 2021
+check...
+ok
+pass
+Wed Feb 17 15:30:12 CST 2021
+check...
+ok
+pass
+Wed Feb 17 17:37:19 CST 2021
+check...
+ok
+pass
+Wed Feb 17 19:45:44 CST 2021
+check...
+ok
+pass
+Wed Feb 17 21:58:00 CST 2021
+check...
+ok
+pass
+Thu Feb 18 02:15:34 CST 2021
+check...
+ok
+pass
+Thu Feb 18 04:22:57 CST 2021
+check...
+ok
+pass
+Thu Feb 18 06:30:08 CST 2021
+check...
+ok
+pass
+Thu Feb 18 09:08:52 CST 2021
+check...
+ok
+pass
+Thu Feb 18 11:16:51 CST 2021
+check...
+ok
+pass
+Thu Feb 18 13:23:57 CST 2021
+check...
+ok
+pass
+Thu Feb 18 15:31:06 CST 2021
+check...
+ok
+pass
+Thu Feb 18 17:38:13 CST 2021
+check...
+ok
+need update..
+update data==>
+192.168.111.73|ops_arrange ops_arrange_线上_航友生产集群
+done! Thu Feb 18 17:54:20 CST 2021
+Thu Feb 18 19:45:26 CST 2021
+check...
+ok
+pass
+Thu Feb 18 21:52:35 CST 2021
+check...
+ok
+pass
+Thu Feb 18 23:59:57 CST 2021
+check...
+ok
+pass
+Fri Feb 19 02:15:58 CST 2021
+check...
+ok
+pass
+Fri Feb 19 04:23:49 CST 2021
+check...
+ok
+pass
+Fri Feb 19 06:30:58 CST 2021
+check...
+ok
+pass
+Fri Feb 19 09:08:54 CST 2021
+check...
+ok
+pass
+Fri Feb 19 11:16:01 CST 2021
+check...
+ok
+pass
+Fri Feb 19 13:23:08 CST 2021
+check...
+ok
+pass
+Fri Feb 19 15:30:15 CST 2021
+check...
+ok
+pass
+Fri Feb 19 17:37:26 CST 2021
+check...
+ok
+pass
+Fri Feb 19 19:44:33 CST 2021
+check...
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 1004, in _send_output
+    self.send(msg)
+  File "/usr/local/python3/lib/python3.8/http/client.py", line 944, in send
+    self.connect()
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x2b81ce4bf190>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/local/python3/lib/python3.8/site-packages/urllib3/util/retry.py", line 573, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.188.184', port=80): Max retries exceeded with url: /app/5c1b78b997172 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2b81ce4bf190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./get_app_info_new.py", line 99, in <module>
+    cluster_info = get_application_ip(app_id)
+  File "./get_app_info_new.py", line 66, in get_application_ip
+    response = requests.get(
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.188.184', port=80): Max retries exceeded with url: /app/5c1b78b997172 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x2b81ce4bf190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+ok
+need update..
+update data==>
+done! Fri Feb 19 19:57:44 CST 2021
+Fri Feb 19 21:51:40 CST 2021
+check...
+ok
+need update..
+update data==>
+done! Fri Feb 19 22:08:47 CST 2021
+Fri Feb 19 23:58:49 CST 2021
+check...
+ok
+pass
+Sat Feb 20 02:06:02 CST 2021
+check...
+ok
+pass
+Sat Feb 20 04:13:15 CST 2021
+check...
+ok
+pass
+Sat Feb 20 06:23:39 CST 2021
+check...
+ok
+pass
+Sat Feb 20 09:08:57 CST 2021
+check...
+ok
+pass
+Sat Feb 20 11:16:04 CST 2021
+check...
+ok
+pass
+Sat Feb 20 13:23:12 CST 2021
+check...
+ok
+pass
+Sat Feb 20 15:30:20 CST 2021
+check...
+ok
+pass
+Sat Feb 20 17:37:27 CST 2021
+check...
+ok
+pass
+Sat Feb 20 19:44:34 CST 2021
+check...
+ok
+pass
+Sat Feb 20 21:51:42 CST 2021
+check...
+ok
+pass
+Sun Feb 21 00:02:45 CST 2021
+check...
+ok
+pass
+Sun Feb 21 02:09:56 CST 2021
+check...
+ok
+pass
+Sun Feb 21 04:17:09 CST 2021
+check...
+ok
+pass
+Sun Feb 21 06:24:18 CST 2021
+check...
+ok
+pass
+Sun Feb 21 09:08:59 CST 2021
+check...
+ok
+pass
+Sun Feb 21 11:16:06 CST 2021
+check...
+ok
+pass
+Sun Feb 21 13:23:30 CST 2021
+check...
+ok
+pass
+Sun Feb 21 15:36:15 CST 2021
+check...
+ok
+pass
+Sun Feb 21 18:27:58 CST 2021
+check...

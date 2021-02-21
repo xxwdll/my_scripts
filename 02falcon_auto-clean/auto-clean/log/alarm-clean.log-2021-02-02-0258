@@ -1,0 +1,463 @@
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-01_13-42-56
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.5G   18G   8% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  180G  289G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.8T  88% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-01_13-43-12
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.5G   18G   8% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  180G  289G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.8T  88% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-01_13-43-28
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.5G   18G   8% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  180G  289G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.8T  88% /mnt/nanhui
+---------
+ip==>  192.168.110.112
+path==>  /u03
+time==>  2021-02-01_15-14-47
+---------
+[ -f '/u03/log/CCMS/middlelog/catalina.out' ] && cat /dev/null > /u03/log/CCMS/middlelog/catalina.out
+app_name='CCMS'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -cmin +60 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.7G  3.6G  62% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  1.5G  7.8G  16% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  2.9G   16G  16% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  2.9G  6.4G  31% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  1.4G  7.8G  16% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.7T  2.0T  75% /u05/foc2file
+//192.168.0.167/hylogbak
+                       18T   14T  4.2T  77% /mnt/hangyou
+//dd.chinner.com/hylogbak
+                       18T   14T  4.2T  77% /mnt/hangyou
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-01_21-09-08
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+0082b955ef5718f6a228030ef68e3294f89ae69db2106e9cf022dc8bcfb7d874
+032dccbca5394a78236077656d81c8a5f28884f626f6702e0640187d73e9a4f3
+047f6fe1201ae2c61a9eda2e7506f969320c965088399067543a20d5ea453556
+04a9384275d44826b2da4ec92f237167aa5804722c4875378af423d78c387724
+04c82a95e85ab8e53e593345d3876317ae7e1940eb8273491ca619621a7ba487
+076cc1b4d133886355340df9d28428f742c9fe22a3ade0312e481cd857833cc3
+0c0b25de6e475449dcd2f9991718d0865621298449c7b91ece7a8eb2d30e2cdf
+0c8cd83e586c8158a5cbe09f29908913388c6ba77554abe4a1c43b053596a5f3
+0d156f6c0e61993cff04deddfba783db3db440f2701dc3ed745a2ac97a2cad43
+0d3f40984a0bd6a4db38adb7dbb9c5b45b2aaec5d647be8dd910a57ba667e8dc
+1154ee20ecc751d1ec12f5337d64a2b9a5bde9dd402e25bdf23344c4a45e2e78
+11d4662a3023a78790e612d10fb79558ad8e91d8a99207da9524a5a25ac646e7
+12fe406c268e7f18ab431e5cbb28886b640484ca8a8c066387eeaf78e27c795f
+1451e4eca43ebf44a4fc33e9e80042c12c3f54bc006cb6999f0f06cb3735cf46
+161a5df9a128a5dae2335d617c9f7e72d25944f67c7faf9e43a0c521bf9598c4
+16cf400c5b9e003021cd6bf8e620af2fb48d1035ee71ab1d084957a255c95b35
+175297f3e30bf9e0c8498bb4d6f85b55be96be2fe87c31b7bcf6f6efbaa2aa6d
+18314fff892b23cf52d5cbe42ec9f4a88bd4139507428d534b7a9ad54919a9f3
+1ba84df4eb4275711dbe352b822793eabceecfde01fb771a6221b7d87286ffcf
+22ba977d57d04188fb2111b48375cc945c181e81c77b470e4237bc342928e864
+237bb01c8726f6ab9e7cb143f86ae6998b0a2e65e4c6915965c55f7532dea7df
+23889b9bf9dd039ece38e5bf45f7faf371c79488897259cfdf59d86524aee42a
+2617a0763b820dd064c73a8b265d9ff65fc6e809bec2cdec9e39f037097ea4a2
+270b53045e0d32619be7e6c6670d411d83019da9e88cb0632e1b5fe17411c61a
+29fc3e99e4bbf19bdd6de0e198366e6e9c6712da8168f701adc9da41a79bfaf0
+2a8958f6adca5abe3fcc2624cfe4244cf30ae7615f78ac675b540e45c1a06e32
+2d82f0986ea37543988bcdbffb40b24bb33a64b5343d2fafdf336ee280f65088
+2d8c882b102c9d79cfd92ab0459fd3684ad04c95398e92c5321da9a48dbfaba0
+2e740621a741e186c5dddbcab7aef14ec36fe40033aaad6229c97cfff96bf679
+314a58ccc8374e301fcd3d5d13f30ec28652720046657c281ec28ba12bec139d
+32cf5ad0ff3644f486d9ee278e24861e63118831796ea64eef5d4715a226405d
+32d78c6ed93bdf3d921b8304bc00611706dad93e3c1f91a2c253e4c53a754413
+330f1366a528aaf969af2215f9a4d080e90fc36f87c880d7f9c1d01e4994b279
+3d96b18f0ebf4cd4cd7a7e52b94800e913c6d5e20499079f05150133f0a7dc40
+3e28c0bc8967856ac9ea2824f3468bcf1b4701c0a53b36dd324c4484f62c3e00
+40feb73de64485b560bb31e6d7c843a6c5bec9e20467ebe440561bf4a381ee01
+4197f1d999c7eb295388a4ff822bcdae4a47d396ab59209bb391ed6cb7c877ea
+42827ace558e95a82c8777fc4379c4e4c3d1e99267d76543ac8b8edc4b8edf11
+43ee5d12641135a8df64e8e1fdb76c06f40bf80a32274f23ec72a258dca07adb
+44a31f3a3f301ed78c8fdae5a2295f4c85783f57d92d65f53d32d2f3097bba33
+44d6d4b0e1936c5436a7c56ce15a96df00a7bd0ea0051485cda8f77a9ade8009
+44da66814d04cf96eb00f73bb6579002dc8eb659374448fb12e4d032e3099ea8
+45d3dfe137221dc3d55dee7df065731cf0fae9733461992b62b7002e86b313ee
+460884322debca05f07bd556751bcb768de7f9817cf5507f82f7e85360c60dea
+46a12515f99903cb2c22fac7a98ac28c39121c5256888f970791f95672f3f076
+4958678488b4825b01d325cece7a37b3af5b990a55edbb4de0e1ff2dfefc32ed
+4c14644ac39536e30950be0f7a4a28983bd6b6fc9ed22978e45411b39601ccfe
+4d291509b800ecba71e49efd6b19f048ba2087bdd4cdf4239d6b82eb32217917
+4e9c02607584d28f380777384dab3be58c93f8dc8920207ef2c694e662c5d932
+4ea64f38a0aad61955d249288a942eab95e728b37ee00be435bfe584454bfd86
+4ee3569b6a0d7ebbac08d46ae04a08e4b9e1b94667ba617ac852e7a825969ac8
+4f1a8c920dfeb7fb85a1140bf24e1b3feb2187481fa1f8eac67801a8d4004458
+4f82a57fa20d6e06cb62b73549c6a7c5140bfe5f9e152b3261735badd9b626d3
+50d9a37caa7945f8bd5dcdbb19fece943ce07e3da935e7e9badde9bdd0465e68
+52aa9b6f224625d9cd6a8d13845da7933945e3c3c5fd061988b13e5b65e957e1
+52cfabbfc2250bed388dd02cf6437c570711188008ab848d386cd209f21690cb
+55d0e3d219e207fc29f94a4e4b4c54af51093d7a477d89c3007382ee85182256
+56df4a6b9ce9c9c1aedbd9494be2b061825aabceef58e0efa85201521bcea07a
+58204f534a50537f7490cc01788f210dac17dcd40f77aa5ed29d52c4b583fc38
+582734f1666a8fb9a6acf6e7a9784a4a5fc93a86bc557338b58eb5ddff1357e9
+5988adee11810271f28a7d2fd53b22978487bccd36fe2d0dd20c26f6a2b2c3f5
+5a08e19e928e779b9e438e4cfeac6831d0ce84483e5172da70238bbd124d84f7
+5a8f2af211993c4d6a308f4e7a17267d110cfa2d8be7bf6f9f82c1b7e35e2363
+5c822391badbd962b097ccca829584776ff8e6ffa2ae6649811c17dfb5d3bc97
+5d769f00cd24b5ac3a2a9380ff57dfc09af369d90814ae40956f4f03c686545c
+5d9343ac3c96227100913c11c092ca6989fb1066c864e04dfa64d8e95fe52650
+5e904772b8a7c3925d236dc1de786b44f222109a0ae2b53faa303f675848d93a
+5f1691c43a5e91281c5716c5f6eee1fde8cf157d5b9b57030cccd7885665c1a5
+5fecf99bd31140d92da023c02d0295432df2f954ffbe7dc5bee2ab96ecdfe42b
+611fdc9f9a5de8429be0caff4806f447607d00c98ec32ea3d0ef70272289c7fa
+61e52ceb2afd66c8cb0e2bba4ca67ad7a02804148715e4dcb2d5b5e197ee3f76
+61e8770d7eae7c7b2cef71d292c45f8a17e3d880d3919d47851e32b468e4bba3
+6269a1b84b4d4f483316322df8eedb45e720a85206b3b458866236794de37cae
+64742cfd558fbdcc11e6355c43e4fb4d59db286d0de76df3a716f7e861e9c8b1
+67ea69195ec3b410e02c4a3a615592e14679d79e014060a817ab0fff636999b5
+692b62d9f11735f9eab7497e222cbfcd4b500cc0701163b7ce4bae788748d0f0
+69fbd56f51cd3a27b8312af96a27243d0fdda82d2b61c2e8810300a452c57d97
+6e04381d4ede4ff5835591e94089c5ddcd35652e09a8fea753360e4d59bf17e9
+6f9211dc5421cfc10897ac60504831f2613ac297b6f14abbb8b8358f78e6ae75
+714341a6a6409e3ccfec29a667fe4b65b770a0d7121e2804500867ace6396484
+714c97ccc269bc6ef98ce272a5686e12a7069f9eaa8fed231a882de26f12331a
+71c3d693d55ec7c084234bc6dbefcd4fa17f52f4eaabceeb9f2b90f8b24743ec
+73f5fdabbdee642608ce5b9e76efdf7339a2507c88965ac4eb95e2246e3938e2
+750aa036566bf105daa3241776edc551a64e8b777d69c289cf75623362edc4c9
+75ec5a3d0310984de997d211916ba410cee5074819becb973451ddb2069a1af8
+786a7589895357e26fe9bcf32399663719ba242201339f88984f108ad0b16945
+793b204e424500b0634d0ad10702a79280414d07ba0d8f2d1dd47b0f33b3aadc
+79da44c345c312395dacd6227e5593d28136d43055b2536d7084684dfd8fda09
+7f0b518cd52de55a92c15d5f6e944be4465ff8cac788da9c81b142889d457ceb
+7fa7ff459d406eb09c578021896ac82d330eebfb52d3766442bc26f3d42dfa27
+81ad2ac02843026483a28fa1ddc6c3753e794323c167bb51139ba336232c3407
+820069af88d7b8ec3e985783e043651f754744f8b1e07c0a2a6aa5a8fab85f20
+826489bb0383c29b6ae363f83f4108329459cb93c7c15e94dcf658e49258f2c2
+84c7a5901c566eb743323651263ce067d5170679c7091bf835f2755ec49cc6ba
+84e14f616314c2f25c0fa8ea5a32c7622f28ab16a54cdde7a8f3a4351bb24626
+8524560a684f8205135b5604479ccf1561054cd7a124a8221b136975d17e82ba
+8915ad73474adf3ea1d503954bce57017f0e9276718b4ec4013d22b48f47e1b4
+8dfcf0e8761681da39d199491a2bddf03ad4a5a59b9390cc3895ef08947ec018
+8dff125bbf5ffe0d8bf5ded71fddeaba17c5ce9c4df583382b591be7061c1054
+8feb97fb43111ba8b63a49f2ff7807858c80338c77191903ba10ab01f6daec26
+92db3fad988ef4394736d5d46df105bd8b9c3910df1a7b7b3c4acc84b8218915
+92f264f51604f2e5a6385f631847a2ca8725b111a38b745a8871e3ad027b715a
+95bafca8a3f44fbe9f0a2f048638b15d886d2ebc2de4a83aec61f8828d984c65
+9850ce0df1fea2ffd5c8a22cedb1d5491778c63c1b684ae8549fd52c2af79f97
+9a4d76eec87bb958660f60c5c59b7a80d9151da38df41accd8e584fa6c2ebaa9
+9afe17cae0c77ba8675c283cfe980affac7d4020efb9e0834c2f3aa2727768ab
+9bfd53f1fdc3f36a8a7766591160c40e3ec9e7d1d29296dcf5be3cc400b90338
+9d82c61948ed78ca3a1ff80947a75d8681ed27ec6ec52f3dff1e70e97c5b6362
+9d92eaf36ac6d8d52904446d1b2ae129a8ea795ea24bea28715196ae374bfed6
+a321e9c0029165ec8f668fc739777f18857e7343d40fe8ede6d3553eba7b79f7
+a5194d48270a295ca97e93ad3deb6547143568753ac6ceea1e5a03f24aabfe19
+a5fc2d246c797da99e0de03c43211fd130a8b15a12d61503b36a2c7f8a748912
+a6d1452462b5dfb69d3e57940fa06078b4410b39e17dcaa476542387541283b7
+a91bad68247d544ab08a9781fec0ffc6eaf05a00f4c55504f633ffee4f3119a2
+a96e119e811a1c36d419d47d45ed98ca6a58f99baf60abc3bd2b28245972cd80
+a9d0b4707befed38b44259f0407284cba17106323f4c8b2211dc30416df5052e
+aaf26cdf4abe93354dd53de5afd688f5b8668b6bec755318ccb13815621b18d5
+aca0ca7a51a6d4c399a77446a44f6654584fd609fcd9f299fdd0452e9301550b
+acb8b9137507f63a8e3dbfede681de9e2ba99202c1bb1245b1fdadd25983cf1a
+acd948a21d85b0919e32dbfb1ec19b1dbcd2ea7038d77307f5bd474d9865f9a8
+ae328dd53431d8e14d612ee85d21db7eb8a665e7a015d61837acb616077a2151
+af10fce8b1b8d330e0dbfb3bbd5496539c9f18ed8e175cd4508f7f9e4a00726c
+b07b0b38ed2c93ab3bea339bd81ecfc24b134b6450a14f247b5ba7e1a157fae6
+b509e4cd3083f8958c51e555ca27161aa189b9d6fa70e40c76247bd8a1cbf9e6
+b9c95a2102ecbb4c3971c227b2ba71b638bdfeb266b51069d805078d38f5217d
+bb886fc1d8c539392d168d4eceb5c32850f08ae83ceda12bf34e90b7a60c9f34
+c35525438890a3684d03eaf4361dc6e8d130c184b1242885203ea67f6cc8ad23
+c5f6dc0a3ee3ee0b5afbb12b961fc6bc3b88c985feef82f9c0d07a54f5d83464
+c6b682133f0151ecb7a7e3881daebcccf0c532d5b92a90ea573a15197d828e57
+c7518b7353582c40bba2741d199f0fb9d1a83ed96edc170089ab467cf5e1704f
+c7c7a5ebe44c834133d0a0b24aa2c31a0fed45f0c39cc80fff1e6f3765ff5b67
+cd2a3014bed78801a3ec2e8ad8b6ec8556f9603bca79ec2fb48650bdfa6d1fd5
+cde31b11c447c8f9ff9264b0b988f6bf7bb5fdb278175d5dbb5e1e72e03603dc
+ce2bc17dafedf141c97e4f27b023a18bbdefb513be87a020328083816681b3f4
+d0f8eecd3833d2124485ce73490d98a817d9af2672190518fef466dc920a9f16
+d3a7c1f95d20a5d9ae1bda7be1aaa5c74c64ca115692f9300aaa537ba13cb37d
+d48a594887cf08b66a988824fe263f00e8c37c92541c0185f297d0278ac8dd19
+d76946d12915c889e93ebfb842411a966f8edd11d633549ed51c7be55cb220e6
+d90fdd7f04df34d98d7145378aaafb906e60c5a9eb1c750b52fb2ffa72f8a247
+dca02562724e567d4a891a0daf499f3ad68e5de30208080d597d35e840f8e984
+e0612404b81df828137c2c572abcc7bcac7ef31d2d34f8647dc137fc44de289c
+e09ab70e02c9d876495ad2e229471c28e7cffcbe3999d2006046178fd111d27d
+e1588cc2bc11f615a3570c3c1342d47bbe8725299d997805c40d5a54d69aa4b5
+e4204649a77869934fdbb0ffda2857046defbea4fb51cd5fa4fe179dd7433d64
+e4bfd1c8bbe62fa0ac5f5d13eefbb7ac36f0e09719d8debf7931fa75a10a5b03
+e8a7a05c38b24a80d6d6543b4b2c61e3af19edd69b02e7fccaae582c8221c909
+ea4a18c3a024b48df90008cce98ad13c3ae17b6c8645ae031d793115d1260acd
+ea7692ef66cafd45b35781e5d0e962797c6a3800e537611f9569aad78560c379
+ecbde4cdf708a5b37625045d13861e883770338300fea3cc20871ab43bbc27e7
+ee024f92e85ad3ec1e2398ad00a5ccbd36a31e06fb883ecb0e1ea01c81565006
+ee46802c1dba9220cc6e71f247e4ab3631042b95af11fe2ed05de7a69a0d0fb2
+efa7c7e02946ddf0a6a379ca99b8ffebd05937b61334ff06f041e0b0b80a5caa
+f0421556e64f79561b296c87c04d46fa62b83e1f2a56673c70c37a61e21cbf4f
+f08d4211c9d1b671589225868db7de96c36e323c33e634c73e7902b190d45a1a
+f12f2a95657f8913e210e2c1c18187ccf89066deab4fb52b43219dbbbbcbf13b
+f140a7322c8a53d05b9e3a2a7594f4e503bbe9cd81c4b5599a3b8ee348ca34e2
+f1924b79d09e3fd95f14559e667c35edb8438fdfb478e66098691ff227955274
+f3d8238a6cee3187ff93680d8f2e9b22ebe5817805d152928759f062940731b2
+f3f87061180461ce6d9ac1eb00f17b060f4496da168e2629910aab6a2791cc04
+f5602c2d69074e0687c546d54991f55e80c6fa9de90aff3acf96ec90a9a9c854
+f9b109e119f3e5e38402f7fde4d4516fdb710730d75ecd550718bd323637b962
+facae90a4490d488460c53d7fcb5c7ee5c89654ebc5b08ce707c9c6d2b21cfbf
+fb474925e82acffc7cfd6c87560b2d81a16eb4b9da64a4c86d0a1ac3be9ab008
+fca54418504163bb0c948195e969e9395664677f0c52bf4c4cf29c4fdab7844b
+fcfcb9913328e9e56395f1c6844db19bf52524c0f0960ebaf253dc081fca0068
+fd1a67ddcc4e0d5baa3811404de40c3041103e6cde2a1a617d9ddde15bb5c7eb
+fdf6fca9c97e5d64cc4880f788d830055cbe08ef3e1fc570835cb8622a6b9ede
+fffc994127d5310f279490045c1268c89de02bdc1b98015446a6e6bc1808cfba
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  394M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.6G  85% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-01_21-09-27
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  394M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.6G  85% /u03
+---------
+ip==>  192.168.111.183
+path==>  /u03
+time==>  2021-02-01_21-09-43
+---------
+docker volume rm $(docker volume ls -qf dangling=true)
+docker rmi $(docker images | grep '^<none>' | awk '{print $3}')
+df -h
+"docker volume rm" requires at least 1 argument.
+See 'docker volume rm --help'.
+
+Usage:  docker volume rm [OPTIONS] VOLUME [VOLUME...]
+
+Remove one or more volumes
+"docker rmi" requires at least 1 argument.
+See 'docker rmi --help'.
+
+Usage:  docker rmi [OPTIONS] IMAGE [IMAGE...]
+
+Remove one or more images
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-root   20G   13G  7.4G  64% /
+devtmpfs               3.8G     0  3.8G   0% /dev
+tmpfs                  3.9G   84K  3.9G   1% /dev/shm
+tmpfs                  3.9G  394M  3.5G  11% /run
+tmpfs                  3.9G     0  3.9G   0% /sys/fs/cgroup
+/dev/mapper/rhel-u01    20G  4.6G   16G  23% /u01
+/dev/mapper/rhel-u02    20G  956M   20G   5% /u02
+/dev/sda1              497M  205M  292M  42% /boot
+tmpfs                  781M   16K  781M   1% /run/user/42
+tmpfs                  781M     0  781M   0% /run/user/0
+/dev/mapper/rhel-u03    30G   26G  4.6G  85% /u03
+---------
+ip==>  192.168.110.108
+path==>  /u03
+time==>  2021-02-02_00-19-04
+---------
+if [ -d '/u03/log/token/log4j/' ];then
+  cd /u03/log/token/log4j/
+  find ./ -mtime +3 -type f | grep log | grep -v \.gz$ | grep 20 | xargs -i gzip {}
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.5G  3.8G  60% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  461M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G   11G  7.7G  59% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.8G  4.5G  52% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  655M  8.6G   7% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+//dd.chinner.com/hylogbak
+                       18T   13T  4.8T  73% /mnt/hangyou
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-02_02-13-45
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  4.1T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  4.1T  90% /manifest
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-02_02-14-04
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  4.1T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  4.1T  90% /manifest
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-02_02-14-20
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  4.1T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  4.1T  90% /manifest
+---------

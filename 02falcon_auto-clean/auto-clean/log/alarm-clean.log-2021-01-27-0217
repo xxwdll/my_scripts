@@ -1,0 +1,261 @@
+ip==>  192.168.190.51
+path==>  /u03
+time==>  2021-01-26_04-13-35
+---------
+null
+---------
+ip==>  192.168.190.51
+path==>  /u03
+time==>  2021-01-26_04-13-50
+---------
+null
+---------
+ip==>  192.168.190.51
+path==>  /u03
+time==>  2021-01-26_04-14-05
+---------
+null
+---------
+ip==>  192.168.190.51
+path==>  /u03
+time==>  2021-01-26_04-14-20
+---------
+null
+---------
+ip==>  192.168.0.146
+path==>  /u03
+time==>  2021-01-26_07-16-03
+---------
+this_dir='/u03/log/ec'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                       29G   14G   15G  49% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  173M   19G   1% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G   18G   21G  47% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G   16G  3.3G  83% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   33T  4.7T  88% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   33T  4.7T  88% /manifest
+---------
+ip==>  192.168.111.36
+path==>  /u01
+time==>  2021-01-26_08-49-19
+---------
+this_file='/u01/tomcat8-oqas_api/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.7G   12G  40% /
+tmpfs                               1.9G   72K  1.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.9G   15G  21% /u01
+/dev/mapper/VolGroup-u02lv           20G  260M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G  5.9G   13G  32% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         1.9G     0  1.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.2T  71% /mnt/hangyou
+---------
+ip==>  192.168.111.36
+path==>  /u01
+time==>  2021-01-26_08-50-04
+---------
+this_file='/u01/tomcat8-oqas_api/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.7G   12G  40% /
+tmpfs                               1.9G   72K  1.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.9G   15G  21% /u01
+/dev/mapper/VolGroup-u02lv           20G  260M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G  5.9G   13G  32% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         1.9G     0  1.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.2T  71% /mnt/hangyou
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_08-57-57
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_08-58-12
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_08-58-27
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_08-58-43
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_09-00-14
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_09-00-29
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_09-00-45
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_09-01-00
+---------
+null
+---------
+ip==>  192.168.110.108
+path==>  /u03
+time==>  2021-01-26_09-38-12
+---------
+if [ -d '/u03/log/token/log4j/' ];then
+  cd /u03/log/token/log4j/
+  find ./ -mtime +3 -type f | grep log | grep -v \.gz$ | grep 20 | xargs -i gzip {}
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.5G  3.8G  60% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  480M  8.8G   6% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G   11G  7.7G  58% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.9G  4.4G  53% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  655M  8.6G   7% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+//dd.chinner.com/hylogbak
+                       18T   13T  5.2T  71% /mnt/hangyou
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_09-42-54
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_09-42-54
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_09-43-09
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_09-43-09
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_10-00-00
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_10-00-00
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_10-00-16
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_10-00-16
+---------
+null
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_21-29-46
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.5G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  2.3G   17G  13% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  184G  284G  40% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.4T  86% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_21-30-02
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.5G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  2.3G   17G  13% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  184G  284G  40% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.4T  86% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-26_21-30-18
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.5G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  2.3G   17G  13% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  184G  284G  40% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.4T  86% /mnt/nanhui
+---------

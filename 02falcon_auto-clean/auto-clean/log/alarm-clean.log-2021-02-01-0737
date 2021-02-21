@@ -1,0 +1,236 @@
+ip==>  192.168.0.156
+path==>  /u03
+time==>  2021-01-31_16-14-11
+---------
+if [ -d '/u03/log/esb_md/log4j' ];then
+  cd /u03/log/esb_md/log4j
+  find ./ -cmin +360 -type f -name '*20*log' | xargs -i gzip {}
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.6G  3.7G  61% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  1.5G  7.7G  17% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G   11G  7.7G  58% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  7.4G  1.9G  80% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  1.3G  8.0G  14% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 5.9G     0  5.9G   0% /dev/shm
+cgroup_root           5.9G   16K  5.9G   1% /cgroup
+---------
+ip==>  192.168.110.39
+path==>  /u01
+time==>  2021-01-31_17-42-45
+---------
+[ -f '/u01/tomcat-7.0.64-FCMS_ROSTER/logs/catalina.out' ] && cat /dev/null > /u01/tomcat-7.0.64-FCMS_ROSTER/logs/catalina.out
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.0G   13G  36% /
+tmpfs                               3.9G   68K  3.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.8G   15G  21% /u01
+/dev/mapper/VolGroup-u02lv           20G  312M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G  4.2G   15G  23% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.5T  70% /mnt/hangyou
+---------
+ip==>  192.168.110.39
+path==>  /u01
+time==>  2021-01-31_17-43-18
+---------
+[ -f '/u01/tomcat-7.0.64-FCMS_ROSTER/logs/catalina.out' ] && cat /dev/null > /u01/tomcat-7.0.64-FCMS_ROSTER/logs/catalina.out
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.0G   13G  36% /
+tmpfs                               3.9G   68K  3.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.8G   15G  21% /u01
+/dev/mapper/VolGroup-u02lv           20G  312M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv           20G  4.2G   15G  23% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.5T  70% /mnt/hangyou
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-31_22-40-58
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.8G   17G  10% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  182G  286G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.4T  86% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-31_22-41-14
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.8G   17G  10% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  182G  286G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.4T  86% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-31_22-41-30
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.8G   17G  10% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  182G  286G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.4T  86% /mnt/nanhui
+---------
+ip==>  192.168.110.54
+path==>  /u01
+time==>  2021-01-31_22-56-46
+---------
+[ -f '/u01/tomcat7-IPS/logs/catalina.out' ] && cat /dev/null > /u01/tomcat7-IPS/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.5G  3.8G  59% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  420M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  710M   18G   4% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.2G  5.1G  45% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  407M  8.8G   5% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+//192.168.0.167/hylogbak
+                       18T   13T  5.5T  70% /mnt/hangyou
+---------
+ip==>  192.168.110.54
+path==>  /u01
+time==>  2021-01-31_22-57-11
+---------
+[ -f '/u01/tomcat7-IPS/logs/catalina.out' ] && cat /dev/null > /u01/tomcat7-IPS/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.5G  3.8G  59% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  420M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  710M   18G   4% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.2G  5.1G  45% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  407M  8.8G   5% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+//192.168.0.167/hylogbak
+                       18T   13T  5.5T  70% /mnt/hangyou
+---------
+ip==>  192.168.110.54
+path==>  /u01
+time==>  2021-01-31_22-57-27
+---------
+[ -f '/u01/tomcat7-IPS/logs/catalina.out' ] && cat /dev/null > /u01/tomcat7-IPS/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.5G  3.8G  59% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  420M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  710M   18G   4% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.2G  5.1G  45% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  407M  8.8G   5% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+//192.168.0.167/hylogbak
+                       18T   13T  5.5T  70% /mnt/hangyou
+---------
+ip==>  192.168.111.225
+path==>  /u03
+time==>  2021-02-01_01-50-49
+---------
+app_name='mis-rfid-api'
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+src_dir='/u03/backuplog/'$app_name
+tar_dir='/mnt/hangyou/app/'$app_name'/'$this_ip
+if [ -d $src_dir ] && [ -d $tar_dir ];then
+  cd $src_dir
+  find ./ -cmin +60 -type f | grep 20 | grep log | xargs -i mv -f {} $tar_dir
+fi
+if [ -d '/u03/log/mis-rfid-api/log4j' ];then
+  cd /u03/log/mis-rfid-api/log4j
+  find ./ -mindepth 2 -maxdepth 2 -cmin +360 -type f | grep 20 | grep log$ | xargs -i gzip {}
+fi
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  7.6G   12G  39% /
+tmpfs                               4.9G   44K  4.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  3.4G   16G  18% /u01
+/dev/mapper/VolGroup-u02lv           20G  2.9G   16G  16% /u02
+/dev/mapper/VolGroup-u03lv           50G  2.7G   45G   6% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         4.9G     0  4.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.2T  71% /mnt/hangyou
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-01_02-13-47
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-01_02-14-02
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-01_02-14-17
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-01_02-14-33
+---------
+null
+---------

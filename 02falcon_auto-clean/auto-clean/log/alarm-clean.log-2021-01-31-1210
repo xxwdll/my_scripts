@@ -1,0 +1,297 @@
+ip==>  192.168.110.102
+path==>  /u03
+time==>  2021-01-31_01-13-23
+---------
+this_dir='/u03/log/bps/log4j'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.1G  4.2G  55% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  365M  8.9G   4% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  2.3G   16G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  6.3G  3.0G  68% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  2.0G  7.3G  21% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+//192.168.0.167/hylogbak
+                       18T   13T  5.7T  69% /mnt/hangyou
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+---------
+ip==>  192.168.111.109
+path==>  /u03
+time==>  2021-01-31_01-41-39
+---------
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+tar_dir='/mnt/hangyou/app/fds-main/'$this_ip
+if [ -d '/u03/log/fds-main/log4j/' ] && [ -d $tar_dir ];then
+  cd /u03/log/fds-main/log4j/
+  find ./ -cmin +60 -type f | grep 20 | grep log |grep gz$ | xargs -i mv -f {} $tar_dir
+fi
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+tar_dir='/mnt/hangyou/app/fds-main/'$this_ip
+if [ -d '/u03/backuplog/fds-main/' ] && [ -d $tar_dir ];then
+  cd /u03/backuplog/fds-main/
+  find ./ -mtime +3 -type f | grep 20 | grep log | grep gz$ | xargs -i mv -f {} $tar_dir
+fi
+df -h
+mv: cannot remove `./info.2021-01-30.84.log.gz': No such file or directory
+mv: cannot stat `./access.2021-01-30.5.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.113.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.76.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.13.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.95.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.83.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.66.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.46.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.137.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.119.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.89.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.24.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.32.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.112.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.29.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.63.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.11.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.99.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.48.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.81.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.70.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.98.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.22.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.78.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.75.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.93.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.91.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.36.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.106.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.72.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.55.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.20.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.122.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.68.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.16.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.102.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.7.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.118.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.94.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.34.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.40.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.134.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.125.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.130.log.gz': No such file or directory
+mv: cannot stat `./access.2021-01-30.1.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.90.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.108.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.103.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.136.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.71.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.44.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.12.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.5.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.139.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.28.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.6.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.9.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.110.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.111.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.140.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.132.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.10.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.21.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.121.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.62.log.gz': No such file or directory
+mv: cannot stat `./access.2021-01-30.4.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.138.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.104.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.56.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.26.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.23.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.87.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.117.log.gz': No such file or directory
+mv: cannot stat `./error.2021-01-30.0.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.77.log.gz': No such file or directory
+mv: cannot stat `./access.2021-01-30.2.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.61.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.53.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.41.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.8.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.128.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.19.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.47.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.80.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.116.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.49.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.101.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.39.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.74.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.25.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.18.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.133.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.59.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.65.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.107.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.60.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.14.log.gz': No such file or directory
+mv: cannot stat `./access.2021-01-30.0.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.115.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.51.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.50.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.69.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.54.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.43.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.35.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.129.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.97.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.86.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.37.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.135.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.105.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.42.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.131.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.64.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.79.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.141.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.82.log.gz': No such file or directory
+mv: cannot stat `./info.2021-01-30.45.log.gz': No such file or directory
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  9.2G   11G  48% /
+tmpfs                               3.9G     0  3.9G   0% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.3G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv           20G  298M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv          137G   38G   93G  30% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   13T  5.5T  70% /mnt/hangyou
+192.168.110.21:/focfile/focfileqt   7.7T  5.7T  2.0T  75% /u05/foc2file
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-01-31_02-20-13
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-01-31_02-20-28
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-01-31_02-20-43
+---------
+null
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-01-31_02-20-59
+---------
+null
+---------
+ip==>  192.168.111.119
+path==>  /
+time==>  2021-01-31_04-52-39
+---------
+[ -f '/home/weblogic10/.pm2/logs/acars-out.log' ] && cat /dev/null > /home/weblogic10/.pm2/logs/acars-out.log
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G   12G  7.8G  61% /
+tmpfs                               3.9G     0  3.9G   0% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.3G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv           20G  2.5G   17G  13% /u02
+/dev/mapper/VolGroup-u03lv           20G  173M   19G   1% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+---------
+ip==>  192.168.111.119
+path==>  /
+time==>  2021-01-31_04-52-55
+---------
+[ -f '/home/weblogic10/.pm2/logs/acars-out.log' ] && cat /dev/null > /home/weblogic10/.pm2/logs/acars-out.log
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G   12G  7.8G  61% /
+tmpfs                               3.9G     0  3.9G   0% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.3G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv           20G  2.5G   17G  13% /u02
+/dev/mapper/VolGroup-u03lv           20G  173M   19G   1% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+---------
+ip==>  192.168.111.119
+path==>  /
+time==>  2021-01-31_04-53-11
+---------
+[ -f '/home/weblogic10/.pm2/logs/acars-out.log' ] && cat /dev/null > /home/weblogic10/.pm2/logs/acars-out.log
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G   12G  7.8G  61% /
+tmpfs                               3.9G     0  3.9G   0% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.3G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv           20G  2.5G   17G  13% /u02
+/dev/mapper/VolGroup-u03lv           20G  173M   19G   1% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-31_07-09-01
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  992M   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  177G  292G  38% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.2T  87% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-31_07-09-18
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  992M   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  177G  292G  38% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.2T  87% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-01-31_07-09-33
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  39% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  992M   18G   6% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  177G  292G  38% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   20T  3.2T  87% /mnt/nanhui
+---------

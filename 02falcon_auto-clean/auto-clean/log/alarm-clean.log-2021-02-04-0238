@@ -1,0 +1,2192 @@
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-03_02-14-24
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  4.0T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  4.0T  90% /manifest
+---------
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.8/site-packages/pymysql/connections.py", line 581, in connect
+    sock = socket.create_connection(
+  File "/usr/local/python3/lib/python3.8/socket.py", line 807, in create_connection
+    raise err
+  File "/usr/local/python3/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./get_falcon_info.py", line 26, in <module>
+    conn = pymysql.connect(host='10.16.20.35', user='root',passwd='123456', db='alarms', port=3306, charset='utf8')
+  File "/usr/local/python3/lib/python3.8/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.8/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/python3/lib/python3.8/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '10.16.20.35' ([Errno 101] Network is unreachable)")
+ip==>  10.16.39.30
+path==>  /u01
+time==>  2021-02-03_10-56-19
+---------
+this_file='/u01/tomcat7-IPS/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.1G  4.2G  55% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  902M  8.4G  10% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  438M   18G   3% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.3G  5.0G  47% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  489M  8.8G   6% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+//192.168.0.167/hylogbak
+                       18T   14T  4.4T  76% /mnt/hangyou
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+---------
+ip==>  10.16.39.30
+path==>  /u01
+time==>  2021-02-03_10-56-35
+---------
+this_file='/u01/tomcat7-IPS/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.1G  4.2G  55% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  902M  8.4G  10% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  438M   18G   3% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.3G  5.0G  47% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  489M  8.8G   6% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+//192.168.0.167/hylogbak
+                       18T   14T  4.4T  76% /mnt/hangyou
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+---------
+ip==>  10.16.39.30
+path==>  /u01
+time==>  2021-02-03_10-56-51
+---------
+this_file='/u01/tomcat7-IPS/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.1G  4.2G  55% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  902M  8.4G  10% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  438M   18G   3% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.3G  5.0G  47% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  489M  8.8G   6% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+//192.168.0.167/hylogbak
+                       18T   14T  4.4T  76% /mnt/hangyou
+192.168.110.21:/focfile/focfileqt
+                      7.7T  5.8T  1.9T  76% /u05/foc2file
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-03_12-26-08
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  40% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.5G   18G   8% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  181G  288G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.5T  90% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-03_12-26-25
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  40% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.5G   18G   8% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  181G  288G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.5T  90% /mnt/nanhui
+---------
+ip==>  192.168.187.40
+path==>  /u01
+time==>  2021-02-03_12-26-40
+---------
+this_file='/u01/tomcat8-oims/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+Filesystem                              Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root       21G  7.6G   12G  40% /
+tmpfs                                   5.9G   44K  5.9G   1% /dev/shm
+/dev/mapper/VolGroup-u01lv               20G  4.2G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv               20G  290M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv               20G  1.5G   18G   8% /u03
+/dev/sda1                               194M   35M  150M  19% /boot
+192.168.110.21:/zhoubianfile/oims_file  468G  181G  288G  39% /u05/oims_file
+cgroup_root                             5.9G     0  5.9G   0% /cgroup
+//dd.chinner.com/nhlogbak                23T   21T  2.5T  90% /mnt/nanhui
+---------
+ip==>  192.168.110.166
+path==>  /u01
+time==>  2021-02-03_12-28-27
+---------
+[ -f '/u01/tomcat-7.0.64/logs/catalina.out' ] && cat /dev/null > /u01/tomcat-7.0.64/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.1G  4.1G  56% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  405M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  825M   18G   5% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  6.0G  3.3G  65% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  1.4G  7.9G  16% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+192.168.110.21:/zhoubianfile/pimfile
+                      468G  181G  288G  39% /u05/pimfile
+cgroup_root           3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak
+                       18T   14T  4.4T  76% /mnt/hangyou
+192.168.110.21:/zhoubianfile/RMSfile
+                      468G  181G  288G  39% /u05/pimrmsdata
+---------
+ip==>  192.168.110.166
+path==>  /u01
+time==>  2021-02-03_12-28-47
+---------
+[ -f '/u01/tomcat-7.0.64/logs/catalina.out' ] && cat /dev/null > /u01/tomcat-7.0.64/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.1G  4.1G  56% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  405M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  825M   18G   5% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  6.0G  3.3G  65% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  1.4G  7.9G  16% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+192.168.110.21:/zhoubianfile/pimfile
+                      468G  181G  288G  39% /u05/pimfile
+cgroup_root           3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak
+                       18T   14T  4.4T  76% /mnt/hangyou
+192.168.110.21:/zhoubianfile/RMSfile
+                      468G  181G  288G  39% /u05/pimrmsdata
+---------
+ip==>  192.168.110.166
+path==>  /u01
+time==>  2021-02-03_12-29-02
+---------
+[ -f '/u01/tomcat-7.0.64/logs/catalina.out' ] && cat /dev/null > /u01/tomcat-7.0.64/logs/catalina.out
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.1G  4.1G  56% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  405M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  825M   18G   5% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  6.0G  3.3G  65% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  1.4G  7.9G  16% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+192.168.110.21:/zhoubianfile/pimfile
+                      468G  181G  288G  39% /u05/pimfile
+cgroup_root           3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak
+                       18T   14T  4.4T  76% /mnt/hangyou
+192.168.110.21:/zhoubianfile/RMSfile
+                      468G  181G  288G  39% /u05/pimrmsdata
+---------
+ip==>  192.168.111.31
+path==>  /u01
+time==>  2021-02-03_13-50-11
+---------
+null
+---------
+ip==>  192.168.111.31
+path==>  /u01
+time==>  2021-02-03_13-50-26
+---------
+null
+---------
+ip==>  192.168.111.31
+path==>  /u01
+time==>  2021-02-03_13-50-41
+---------
+null
+---------
+ip==>  192.168.111.31
+path==>  /u01
+time==>  2021-02-03_13-50-57
+---------
+null
+---------
+ip==>  192.168.111.118
+path==>  /
+time==>  2021-02-03_17-49-59
+---------
+[ -f '/home/weblogic10/.pm2/logs/acars-out.log' ] && cat /dev/null > /home/weblogic10/.pm2/logs/acars-out.log
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G   12G  7.7G  61% /
+tmpfs                               3.9G     0  3.9G   0% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.3G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv           20G   13G  6.5G  66% /u02
+/dev/mapper/VolGroup-u03lv           20G  173M   19G   1% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+---------
+ip==>  192.168.111.118
+path==>  /
+time==>  2021-02-03_17-50-16
+---------
+[ -f '/home/weblogic10/.pm2/logs/acars-out.log' ] && cat /dev/null > /home/weblogic10/.pm2/logs/acars-out.log
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G   12G  7.7G  61% /
+tmpfs                               3.9G     0  3.9G   0% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.3G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv           20G   13G  6.5G  66% /u02
+/dev/mapper/VolGroup-u03lv           20G  173M   19G   1% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+---------
+ip==>  192.168.111.118
+path==>  /
+time==>  2021-02-03_17-50-31
+---------
+[ -f '/home/weblogic10/.pm2/logs/acars-out.log' ] && cat /dev/null > /home/weblogic10/.pm2/logs/acars-out.log
+df -h
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G   12G  7.7G  61% /
+tmpfs                               3.9G     0  3.9G   0% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.3G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv           20G   13G  6.5G  66% /u02
+/dev/mapper/VolGroup-u03lv           20G  173M   19G   1% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+---------
+ip==>  192.168.192.35
+path==>  /u01
+time==>  2021-02-03_20-01-31
+---------
+null
+---------
+ip==>  192.168.192.35
+path==>  /u01
+time==>  2021-02-03_20-01-47
+---------
+null
+---------
+ip==>  192.168.192.35
+path==>  /u01
+time==>  2021-02-03_20-02-02
+---------
+null
+---------
+ip==>  192.168.192.35
+path==>  /u01
+time==>  2021-02-03_20-02-17
+---------
+null
+---------
+ip==>  192.168.110.109
+path==>  /u03
+time==>  2021-02-03_20-24-11
+---------
+if [ -d '/u03/log/token/log4j/' ];then
+  cd /u03/log/token/log4j/
+  find ./ -mtime +3 -type f | grep log | grep -v \.gz$ | grep 20 | xargs -i gzip {}
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  5.5G  3.7G  60% /
+/dev/mapper/VolGroup00-varlv
+                      9.7G  446M  8.8G   5% /var
+/dev/mapper/VolGroup00-u03lv
+                       20G  8.3G   10G  46% /u03
+/dev/mapper/VolGroup00-u01lv
+                      9.7G  4.8G  4.5G  53% /u01
+/dev/mapper/VolGroup00-u02lv
+                      9.7G  655M  8.6G   7% /u02
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 3.9G     0  3.9G   0% /dev/shm
+cgroup_root           3.9G   16K  3.9G   1% /cgroup
+//dd.chinner.com/hylogbak
+                       18T   13T  4.9T  73% /mnt/hangyou
+---------
+ip==>  192.168.185.173
+path==>  /var
+time==>  2021-02-03_21-12-17
+---------
+if [ -d '/var/log' ];then
+  cd /var/log
+  files=`ls | grep -oP 'messages(\.[0-9]){0,1}'`
+  for li in `echo $files`;
+  do
+    cat /dev/null > $li
+  done
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  4.5G  4.8G  49% /
+/dev/mapper/VolGroup00-backup
+                       36G  176M   34G   1% /backup
+/dev/mapper/VolGroup00-homelv
+                      5.0G  205M  4.5G   5% /home
+/dev/mapper/VolGroup00-u01lv
+                       30G   11G   17G  39% /u01
+/dev/mapper/VolGroup00-tmplv
+                      5.0G  213M  4.5G   5% /tmp
+/dev/mapper/VolGroup00-u02lv
+                       39G  2.8G   34G   8% /u02
+/dev/mapper/VolGroup00-varlv
+                      5.0G  793M  3.9G  17% /var
+/dev/mapper/VolGroup00-u03lv
+                       39G  2.5G   35G   7% /u03
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 6.8G     0  6.8G   0% /dev/shm
+//192.168.190.100/backupall
+                      200G  170G   31G  85% /mnt/backupall
+//192.168.190.100/ha_hfs
+                      200G  170G   31G  85% /mnt/hfs
+cgroup_root           6.8G     0  6.8G   0% /cgroup
+//192.168.193.241/nhlogbak/
+                       23T   20T  3.2T  87% /mnt/nanhui
+---------
+ip==>  192.168.185.173
+path==>  /var
+time==>  2021-02-03_21-12-40
+---------
+if [ -d '/var/log' ];then
+  cd /var/log
+  files=`ls | grep -oP 'messages(\.[0-9]){0,1}'`
+  for li in `echo $files`;
+  do
+    cat /dev/null > $li
+  done
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  4.5G  4.8G  49% /
+/dev/mapper/VolGroup00-backup
+                       36G  176M   34G   1% /backup
+/dev/mapper/VolGroup00-homelv
+                      5.0G  205M  4.5G   5% /home
+/dev/mapper/VolGroup00-u01lv
+                       30G   11G   17G  39% /u01
+/dev/mapper/VolGroup00-tmplv
+                      5.0G  213M  4.5G   5% /tmp
+/dev/mapper/VolGroup00-u02lv
+                       39G  2.8G   34G   8% /u02
+/dev/mapper/VolGroup00-varlv
+                      5.0G  793M  3.9G  17% /var
+/dev/mapper/VolGroup00-u03lv
+                       39G  2.5G   35G   7% /u03
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 6.8G     0  6.8G   0% /dev/shm
+//192.168.190.100/backupall
+                      200G  170G   31G  85% /mnt/backupall
+//192.168.190.100/ha_hfs
+                      200G  170G   31G  85% /mnt/hfs
+cgroup_root           6.8G     0  6.8G   0% /cgroup
+//192.168.193.241/nhlogbak/
+                       23T   20T  3.2T  87% /mnt/nanhui
+---------
+ip==>  192.168.185.173
+path==>  /var
+time==>  2021-02-03_21-12-56
+---------
+if [ -d '/var/log' ];then
+  cd /var/log
+  files=`ls | grep -oP 'messages(\.[0-9]){0,1}'`
+  for li in `echo $files`;
+  do
+    cat /dev/null > $li
+  done
+fi
+df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  4.5G  4.8G  49% /
+/dev/mapper/VolGroup00-backup
+                       36G  176M   34G   1% /backup
+/dev/mapper/VolGroup00-homelv
+                      5.0G  205M  4.5G   5% /home
+/dev/mapper/VolGroup00-u01lv
+                       30G   11G   17G  39% /u01
+/dev/mapper/VolGroup00-tmplv
+                      5.0G  213M  4.5G   5% /tmp
+/dev/mapper/VolGroup00-u02lv
+                       39G  2.8G   34G   8% /u02
+/dev/mapper/VolGroup00-varlv
+                      5.0G  793M  3.9G  17% /var
+/dev/mapper/VolGroup00-u03lv
+                       39G  2.5G   35G   7% /u03
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 6.8G     0  6.8G   0% /dev/shm
+//192.168.190.100/backupall
+                      200G  170G   31G  85% /mnt/backupall
+//192.168.190.100/ha_hfs
+                      200G  170G   31G  85% /mnt/hfs
+cgroup_root           6.8G     0  6.8G   0% /cgroup
+//192.168.193.241/nhlogbak/
+                       23T   20T  3.2T  87% /mnt/nanhui
+---------
+ip==>  192.168.111.108
+path==>  /u03
+time==>  2021-02-04_01-43-20
+---------
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+tar_dir='/mnt/hangyou/app/fds-main/'$this_ip
+if [ -d '/u03/log/fds-main/log4j/' ] && [ -d $tar_dir ];then
+  cd /u03/log/fds-main/log4j/
+  find ./ -cmin +60 -type f | grep 20 | grep log |grep gz$ | xargs -i mv -f {} $tar_dir
+fi
+this_ip=$(ip addr | grep -A3 eth | grep inet | awk '{print $2}' | grep -oP '([0-9]{1,3}\.){3}[0-9]{1,3}')
+tar_dir='/mnt/hangyou/app/fds-main/'$this_ip
+if [ -d '/u03/backuplog/fds-main/' ] && [ -d $tar_dir ];then
+  cd /u03/backuplog/fds-main/
+  find ./ -mtime +3 -type f | grep 20 | grep log | grep gz$ | xargs -i mv -f {} $tar_dir
+fi
+df -h
+mv: cannot remove `./info.2021-02-03.46.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.135.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.141.log.gz': No such file or directory
+mv: cannot stat `./access.2021-02-03.2.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.68.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.74.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.95.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.53.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.100.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.54.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.108.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.102.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.41.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.150.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.106.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.90.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.130.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.39.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.19.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.98.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.70.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.151.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.77.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.119.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.8.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.14.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.17.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.129.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.97.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.2.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.42.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.60.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.40.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.87.log.gz': No such file or directory
+mv: cannot stat `./access.2021-02-03.5.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.51.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.94.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.69.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.31.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.93.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.65.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.50.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.49.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.145.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.91.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.62.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.23.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.104.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.4.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.156.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.29.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.111.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.64.log.gz': No such file or directory
+mv: cannot stat `./access.2021-02-03.8.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.1.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.136.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.124.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.11.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.30.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.147.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.73.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.144.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.12.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.45.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.154.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.66.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.92.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.47.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.143.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.58.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.76.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.24.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.117.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.7.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.157.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.55.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.28.log.gz': No such file or directory
+mv: cannot stat `./access.2021-02-03.0.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.112.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.13.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.103.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.35.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.123.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.134.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.9.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.84.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.146.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.57.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.83.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.85.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.80.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.114.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.128.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.133.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.89.log.gz': No such file or directory
+mv: cannot stat `./access.2021-02-03.1.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.56.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.115.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.59.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.153.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.26.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.120.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.132.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.18.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.107.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.10.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.86.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.71.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.140.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.131.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.148.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.96.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.25.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.139.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.113.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.122.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.82.log.gz': No such file or directory
+mv: cannot stat `./access.2021-02-03.7.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.125.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.3.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.79.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.44.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.67.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.127.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.33.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.126.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.63.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.20.log.gz': No such file or directory
+mv: cannot stat `./access.2021-02-03.3.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.158.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.38.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.43.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.36.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.78.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.137.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.48.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.34.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.101.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.75.log.gz': No such file or directory
+mv: cannot stat `./info.2021-02-03.21.log.gz': No such file or directory
+Filesystem                          Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup-LogVol00_root   21G  9.2G   11G  48% /
+tmpfs                               3.9G     0  3.9G   0% /dev/shm
+/dev/mapper/VolGroup-u01lv           20G  4.3G   15G  23% /u01
+/dev/mapper/VolGroup-u02lv           20G  298M   19G   2% /u02
+/dev/mapper/VolGroup-u03lv          138G   37G   95G  28% /u03
+/dev/sda1                           194M   35M  150M  19% /boot
+cgroup_root                         3.9G     0  3.9G   0% /cgroup
+//dd.chinner.com/hylogbak            18T   14T  4.7T  74% /mnt/hangyou
+192.168.110.21:/focfile/focfileqt   7.7T  5.7T  2.0T  75% /u05/foc2file
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-04_02-13-42
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2020-07-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-14.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-13.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-14.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-06.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-16.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-20.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./manager.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-29.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-27.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-29.txt.gz already exists;	not overwritten
+gzip: ./manager.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-22.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-12.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-03.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-23.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./manager.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-23.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./manager.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-26.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-26.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-06.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-04-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-02.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-21.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-22.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./manager.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-23.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-26.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-03-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-06-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-29.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-09.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./manager.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-20.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-04.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-17.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./manager.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-07-08.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-25.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-13.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-22.txt.gz already exists;	not overwritten
+gzip: ./manager.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-16.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-24.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-31.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-23.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-07.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-23.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-25.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-12.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-05-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-28.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./manager.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-31.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-19.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-27.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-11.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-26.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-08-05.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-21.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-12.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-21.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-02-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-09-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-24.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-05.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-09.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./manager.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-15.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-11.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-05.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-11-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-29.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-20.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-30.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./manager.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-02.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-04-29.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-06-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-25.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./manager.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-15.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-27.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./manager.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./manager.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-12.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-25.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./manager.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-28.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-25.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./manager.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-08.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-28.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-06.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-07.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./manager.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-12.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-18.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-13.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-02.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-10.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-22.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-31.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-22.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-01.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-15.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-20.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-12.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-20.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-23.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-04.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-25.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./manager.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-23.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-17.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-23.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-12-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-03.txt.gz already exists;	not overwritten
+gzip: ./catalina.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-12.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-26.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./manager.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-19.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-30.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-05.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./manager.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-19.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./host-manager.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-12.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./manager.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./manager.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-16.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-18.txt.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-06.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-07.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-10-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-21.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./manager.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-04-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-17.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-06.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-21.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-11.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./manager.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./manager.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-07-05.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-02.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-24.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-02.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-12.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-01-14.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-19.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-09.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-07.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-12.log.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  3.9T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  3.9T  90% /manifest
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-04_02-14-00
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2020-07-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-14.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-13.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-14.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-06.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-16.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-20.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./manager.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-29.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-27.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-29.txt.gz already exists;	not overwritten
+gzip: ./manager.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-22.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-12.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-03.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-23.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./manager.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-23.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./manager.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-26.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-26.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-06.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-04-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-02.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-21.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-22.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./manager.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-23.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-26.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-03-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-06-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-29.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-09.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./manager.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-20.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-04.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-17.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./manager.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-07-08.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-25.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-13.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-22.txt.gz already exists;	not overwritten
+gzip: ./manager.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-16.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-24.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-31.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-23.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-07.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-23.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-25.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-12.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-05-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-28.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./manager.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-31.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-19.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-27.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-11.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-26.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-08-05.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-21.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-12.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-21.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-02-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-09-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-24.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-05.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-09.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./manager.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-15.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-11.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-05.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-11-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-29.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-20.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-30.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./manager.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-02.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-04-29.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-06-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-25.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./manager.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-15.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-27.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./manager.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./manager.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-12.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-25.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./manager.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-28.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-25.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./manager.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-08.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-28.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-06.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-07.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./manager.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-12.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-18.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-13.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-02.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-10.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-22.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-31.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-22.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-01.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-15.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-20.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-12.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-20.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-23.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-04.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-25.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./manager.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-23.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-17.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-23.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-12-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-03.txt.gz already exists;	not overwritten
+gzip: ./catalina.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-12.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-26.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./manager.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-19.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-30.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-05.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./manager.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-19.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./host-manager.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-12.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./manager.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./manager.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-16.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-18.txt.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-06.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-07.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-10-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-21.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./manager.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-04-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-17.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-06.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-21.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-11.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./manager.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./manager.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-07-05.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-02.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-24.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-02.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-12.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-01-14.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-19.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-09.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-07.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-12.log.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  3.9T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  3.9T  90% /manifest
+---------
+ip==>  192.168.111.49
+path==>  /u01
+time==>  2021-02-04_02-14-16
+---------
+this_dir='/u01/tomcat-7.0.64/logs'
+if [ -d $this_dir ];then
+  cd $this_dir
+  find ./ -cmin +60 -type f -name '*20*' | grep log | grep -v '\.gz$' | xargs -i gzip {}
+fi
+this_file='/u01/tomcat-7.0.64/logs/catalina.out'
+[ -f $this_file ] && cat /dev/null > $this_file
+df -h
+gzip: ./localhost_access_log.2020-07-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-14.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-13.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-14.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-06.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-16.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-20.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./manager.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-29.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-27.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-29.txt.gz already exists;	not overwritten
+gzip: ./manager.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-22.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-12.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-03.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-23.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./manager.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-23.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./manager.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-26.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-26.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-06.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-04-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-02.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-21.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-22.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./manager.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-23.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-26.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-03-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-06-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-29.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-09.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./manager.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-20.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-04.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-17.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./manager.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-07-08.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-25.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-13.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-22.txt.gz already exists;	not overwritten
+gzip: ./manager.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-16.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-24.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-31.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-23.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-07.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-23.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-25.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-12.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-05-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-28.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./manager.2018-08-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-31.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-19.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-27.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-11.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-26.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-08-05.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-21.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-18.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-12.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-21.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-02-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-09-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-04.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-24.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-05.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-09.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./manager.2020-06-06.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-15.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-24.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-11.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-05.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-11-21.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-29.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-20.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-30.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-04-11.log.gz already exists;	not overwritten
+gzip: ./manager.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-02.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-04-29.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-06-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-07.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-25.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-04-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./manager.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-11-16.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-15.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-27.txt.gz already exists;	not overwritten
+gzip: ./catalina.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./manager.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-05-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./manager.2017-07-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-12.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-16.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-25.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-01-10.log.gz already exists;	not overwritten
+gzip: ./manager.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-28.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-25.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-03-13.log.gz already exists;	not overwritten
+gzip: ./manager.2020-12-22.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-08.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-28.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-06.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-07.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./manager.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-12.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-02-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-18.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-18.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-13.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-06-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-02.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-04-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-10.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-30.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-05-27.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-27.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-12-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-10-25.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-22.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-26.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-28.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-31.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-22.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-04-02.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-01.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-15.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-20.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-12.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-20.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-01.log.gz already exists;	not overwritten
+gzip: ./catalina.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-23.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-04.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-25.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-12-20.log.gz already exists;	not overwritten
+gzip: ./manager.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2019-06-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-23.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-17.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-03-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-23.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-11-21.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-12-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-03.txt.gz already exists;	not overwritten
+gzip: ./catalina.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-12.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-05.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-26.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-07-05.log.gz already exists;	not overwritten
+gzip: ./manager.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-20.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-03.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-11.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-08.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-05-09.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2019-01-03.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-19.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-06-30.txt.gz already exists;	not overwritten
+gzip: ./manager.2020-05-21.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-05.txt.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./manager.2018-12-17.log.gz already exists;	not overwritten
+gzip: ./manager.2016-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-22.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-03-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-19.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-23.log.gz already exists;	not overwritten
+gzip: ./host-manager.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-12.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./manager.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./manager.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./host-manager.2021-01-15.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-16.txt.gz already exists;	not overwritten
+gzip: ./catalina.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-17.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-18.txt.gz already exists;	not overwritten
+gzip: ./catalina.2021-01-22.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-16.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-06.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-03-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-07.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-10-14.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-21.txt.gz already exists;	not overwritten
+gzip: ./localhost.2020-08-21.log.gz already exists;	not overwritten
+gzip: ./manager.2017-11-22.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-04-25.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-15.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-17.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2020-12-29.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-12-29.log.gz already exists;	not overwritten
+gzip: ./host-manager.2018-02-03.log.gz already exists;	not overwritten
+gzip: ./manager.2017-04-22.log.gz already exists;	not overwritten
+gzip: ./host-manager.2017-11-27.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-06.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-21.txt.gz already exists;	not overwritten
+gzip: ./localhost.2019-04-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-09-13.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-01.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-11.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-05-26.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-06.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-10-14.log.gz already exists;	not overwritten
+gzip: ./catalina.2019-05-16.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-28.log.gz already exists;	not overwritten
+gzip: ./manager.2020-01-14.log.gz already exists;	not overwritten
+gzip: ./catalina.2018-11-20.log.gz already exists;	not overwritten
+gzip: ./manager.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./manager.2016-10-12.log.gz already exists;	not overwritten
+gzip: ./manager.2016-09-09.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-06-07.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2019-07-05.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2020-02-26.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-10-17.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-29.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-02.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-07-24.txt.gz already exists;	not overwritten
+gzip: ./manager.2017-02-14.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-13.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-10-19.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-02.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2017-03-15.log.gz already exists;	not overwritten
+gzip: ./manager.2017-05-12.log.gz already exists;	not overwritten
+gzip: ./localhost.2020-04-29.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-01-14.txt.gz already exists;	not overwritten
+gzip: ./localhost.2021-01-07.log.gz already exists;	not overwritten
+gzip: ./host-manager.2019-03-25.log.gz already exists;	not overwritten
+gzip: ./catalina.2016-10-09.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-19.txt.gz already exists;	not overwritten
+gzip: ./manager.2019-07-08.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-09-09.txt.gz already exists;	not overwritten
+gzip: ./manager.2016-09-20.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2021-01-10.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-08-18.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-09.txt.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-11-08.txt.gz already exists;	not overwritten
+gzip: ./catalina.2019-09-11.log.gz already exists;	not overwritten
+gzip: ./localhost_access_log.2020-12-07.txt.gz already exists;	not overwritten
+gzip: ./host-manager.2018-06-27.log.gz already exists;	not overwritten
+gzip: ./catalina.2017-05-12.log.gz already exists;	not overwritten
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/mapper/VolGroup00-rootlv
+                      9.7G  6.0G  3.3G  65% /
+/dev/mapper/VolGroup00-u02lv
+                       20G  698M   18G   4% /u02
+/dev/mapper/VolGroup00-u03lv
+                       41G  4.7G   34G  13% /u03
+/dev/mapper/VolGroup00-u01lv
+                       20G  9.6G  8.9G  53% /u01
+/dev/sda1              99M   17M   78M  18% /boot
+tmpfs                 7.8G     0  7.8G   0% /dev/shm
+cgroup_root           7.8G     0  7.8G   0% /cgroup
+192.168.110.21:/file_backup/NFS_back/foc2file/Dispatch/CPL
+                       38T   34T  3.9T  90% /CPL
+192.168.110.21:/file_backup/NFS_back/foc2file/balance/manifest
+                       38T   34T  3.9T  90% /manifest
+---------
